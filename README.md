@@ -38,13 +38,13 @@ https://github.com/SSEUNGSSSEUNGWOO/news-classification-summary
 
 ### 🍎 Diabetes Food Risk Analysis
 
-음식 데이터를 기반으로 **당뇨 위험도를 분석하는 데이터 분석 프로젝트**
+Object Detection 기반 **음식 인식 및 당뇨 위험도 분석 AI 프로젝트**
 
 **Tech Stack**
-Python · Pandas · Machine Learning
+Python · PyTorch · Transformers · Computer Vision
 
 🔗 Repository
-https://github.com/SSEUNGSSSEUNGWOO/diabetes-food-risk-analysis
+https://github.com/SSEUNGSSSEUNGWOO/diabetes-food-detection
 
 ---
 
