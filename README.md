@@ -44,7 +44,7 @@ Object Detection 기반 **음식 인식 및 당뇨 위험도 분석 AI 프로젝
 Python · PyTorch · Transformers · Computer Vision
 
 🔗 Repository
-https://github.com/SSEUNGSSSEUNGWOO/diabetes-food-detection
+[https://github.com/SSEUNGSSSEUNGWOO/diabetes-food-detection](https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection.git)
 
 ---
 
