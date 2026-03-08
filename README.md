@@ -32,7 +32,7 @@ B.S. in Computer Science
 Python · NLP · TF-IDF · FastAPI · t-SNE
 
 🔗 Repository
-https://github.com/SSEUNGSSSEUNGWOO/news-classification-summary
+[https://github.com/SSEUNGSSSEUNGWOO/news-classification-summary](https://github.com/SSEUNGSSEUNGWOO/news-analysis-pipeline.git)
 
 ---
 
