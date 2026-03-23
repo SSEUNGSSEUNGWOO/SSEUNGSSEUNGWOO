@@ -67,8 +67,14 @@ Python · PyTorch · HuggingFace Transformers · PIL
 
 **담당한 부분**
 - 강아지 여부 판별 Object Detection 구현 (MobileNetV2 ImageNet, COCO 클래스 범위로 탐지)
-- **MobileNetV2 / MobileNetV3Large / EfficientNetB0 백본 비교 실험 → EfficientNetB0 선정** (val acc 85.52%, 2위 대비 +7.3%p)
-- EfficientNetB0 fine-tuning으로 120종 견종 분류 모델 성능 개선
+- **백본 비교 실험 → EfficientNetB0 선정 후 단계적 성능 개선** (120종 견종 분류)
+
+| Phase | 변경사항 | Top-1 Acc | Top-5 Acc |
+|-------|---------|-----------|-----------|
+| Phase 1 | MobileNetV2 베이스라인 | 77.90% | 96.72% |
+| Phase 1 | EfficientNetB0 백본 교체 | 85.52% | 98.67% |
+| Phase 2 | Validation 분리 + 최적 모델 저장 + 30 epoch | 86.99% | 98.96% |
+| Phase 3 | EarlyStopping 적용 (17 epoch 자동 종료) | 86.96% | 98.92% |
 - Grad-CAM으로 모델이 어떤 특징을 보고 판단하는지 시각화 (Top-3 품종 히트맵)
 
 **Tech Stack**
