@@ -23,6 +23,35 @@ B.S. in Computer Science
 
 # 🚀 Featured Projects
 
+### 🐶 Dog AI Agent — 강아지 탐지 · 견종 분류 서비스 (팀 프로젝트)
+
+이미지에서 강아지를 탐지하고 견종을 분류한 뒤, 견종별 유전병 정보 기반으로 레시피 이미지를 자동 생성하는 AI 서비스.
+
+**담당한 부분**
+- 강아지 여부 판별 Object Detection 구현 (MobileNetV2 ImageNet, COCO 클래스 범위로 탐지)
+- **백본 비교 실험 → EfficientNetB0 선정 후 단계적 성능 개선** (120종 견종 분류)
+
+| Phase | 내용 | Top-1 Acc | Top-5 Acc |
+|-------|------|-----------|-----------|
+| Phase 1 | 백본 비교 — MobileNetV2 베이스라인 | 77.90% | 96.72% |
+| Phase 1 | 백본 비교 — EfficientNetB0 선정 | 85.52% | 98.67% |
+| Phase 2 | **Validation set 구축** + epoch 30으로 확장 | 86.99% | 98.96% |
+| Phase 3 | EarlyStopping 적용 (17 epoch 자동 종료) | 86.96% | 98.92% |
+- Grad-CAM으로 모델이 어떤 특징을 보고 판단하는지 시각화 (Top-3 품종 히트맵)
+
+> 베이스라인 모델 구조 참고: [aribiswas/stanford-dogs-classifier](https://github.com/aribiswas/stanford-dogs-classifier)
+
+**Tech Stack**
+Python · TensorFlow · Keras · EfficientNetB0 · MobileNetV2 · Grad-CAM
+
+🔗 서비스 레포
+[https://github.com/Dog-AI-Agent/dog-ai-agent_mvp](https://github.com/Dog-AI-Agent/dog-ai-agent_mvp)
+
+🔗 모델 실험 레포
+[https://github.com/Dog-AI-Agent/dog-classifier-models](https://github.com/Dog-AI-Agent/dog-classifier-models)
+
+---
+
 ### 📰 Newszips — 뉴스 자동 분류 · 요약 서비스
 
 유튜브 뉴스 영상을 크롤링해서 **카테고리 분류 → 핵심어 추출 → AI 요약**까지 자동화하고, React 앱으로 서비스하는 풀스택 프로젝트.
@@ -58,33 +87,6 @@ Python · PyTorch · HuggingFace Transformers · PIL
 
 🔗 Repository
 [https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection](https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection)
-
----
-
-### 🐶 Dog AI Agent — 강아지 탐지 · 견종 분류 서비스 (팀 프로젝트)
-
-이미지에서 강아지를 탐지하고 견종을 분류한 뒤, 견종별 유전병 정보 기반으로 레시피 이미지를 자동 생성하는 AI 서비스.
-
-**담당한 부분**
-- 강아지 여부 판별 Object Detection 구현 (MobileNetV2 ImageNet, COCO 클래스 범위로 탐지)
-- **백본 비교 실험 → EfficientNetB0 선정 후 단계적 성능 개선** (120종 견종 분류)
-
-| Phase | 내용 | Top-1 Acc | Top-5 Acc |
-|-------|------|-----------|-----------|
-| Phase 1 | 백본 비교 — MobileNetV2 베이스라인 | 77.90% | 96.72% |
-| Phase 1 | 백본 비교 — EfficientNetB0 선정 | 85.52% | 98.67% |
-| Phase 2 | **Validation set 구축** + epoch 30으로 확장 | 86.99% | 98.96% |
-| Phase 3 | EarlyStopping 적용 (17 epoch 자동 종료) | 86.96% | 98.92% |
-- Grad-CAM으로 모델이 어떤 특징을 보고 판단하는지 시각화 (Top-3 품종 히트맵)
-
-**Tech Stack**
-Python · TensorFlow · Keras · EfficientNetB0 · MobileNetV2 · Grad-CAM
-
-🔗 서비스 레포
-[https://github.com/Dog-AI-Agent/dog-ai-agent_mvp](https://github.com/Dog-AI-Agent/dog-ai-agent_mvp)
-
-🔗 모델 실험 레포
-[https://github.com/Dog-AI-Agent/dog-classifier-models](https://github.com/Dog-AI-Agent/dog-classifier-models)
 
 ---
 
