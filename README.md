@@ -66,15 +66,19 @@ Python · PyTorch · HuggingFace Transformers · PIL
 이미지에서 강아지를 탐지하고 견종을 분류한 뒤, 견종별 유전병 정보 기반으로 레시피 이미지를 자동 생성하는 AI 서비스.
 
 **담당한 부분**
-- 강아지 여부 판별 Object Detection 구현
-- 견종 분류 모델 성능 개선 (모델 전담)
-- Grad-CAM으로 모델이 어떤 특징을 보고 판단하는지 시각화
+- 강아지 여부 판별 Object Detection 구현 (MobileNetV2 ImageNet, COCO 클래스 범위로 탐지)
+- **MobileNetV2 / MobileNetV3Large / EfficientNetB0 백본 비교 실험 → EfficientNetB0 선정** (val acc 85.52%, 2위 대비 +7.3%p)
+- EfficientNetB0 fine-tuning으로 120종 견종 분류 모델 성능 개선
+- Grad-CAM으로 모델이 어떤 특징을 보고 판단하는지 시각화 (Top-3 품종 히트맵)
 
 **Tech Stack**
-Python · PyTorch · HuggingFace Transformers · Grad-CAM
+Python · TensorFlow · Keras · EfficientNetB0 · MobileNetV2 · Grad-CAM
 
-🔗 Organization
-[https://github.com/Dog-AI-Agent](https://github.com/Dog-AI-Agent)
+🔗 서비스 레포
+[https://github.com/Dog-AI-Agent/dog-ai-agent_mvp](https://github.com/Dog-AI-Agent/dog-ai-agent_mvp)
+
+🔗 모델 실험 레포
+[https://github.com/Dog-AI-Agent/dog-classifier-models](https://github.com/Dog-AI-Agent/dog-classifier-models)
 
 ---
 
