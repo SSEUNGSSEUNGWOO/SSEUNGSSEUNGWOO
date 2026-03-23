@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Seungwoo Jang
 
-💡 **Data Analysis / AI / Machine Learning**
+💡 **NLP / Computer Vision / AI 서비스 개발**
 
 Python 기반 데이터 분석과 AI 프로젝트를 공부하고 구현하고 있습니다.
 데이터 분석, 머신러닝, NLP 프로젝트를 중심으로 다양한 문제를 해결하는 것을 목표로 합니다.
