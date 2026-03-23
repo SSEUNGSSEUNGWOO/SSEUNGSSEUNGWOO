@@ -48,15 +48,16 @@ Python · BERT (klue/bert-base) · TF-IDF · OpenAI gpt-4o-mini · FastAPI · Re
 
 ---
 
-### 🍎 Diabetes Food Risk Analysis
+### 🍎 Diabetes Food Risk Detection
 
-Object Detection 기반 **음식 인식 및 당뇨 위험도 분석 AI 프로젝트**
+HuggingFace DETR 모델을 활용해 **Object Detection 파이프라인을 end-to-end로 직접 구현**해본 학습용 프로젝트.
+모델 로딩부터 bounding box 시각화까지 전체 흐름을 익히는 것을 목표로 했습니다.
 
 **Tech Stack**
-Python · PyTorch · Transformers · Computer Vision
+Python · PyTorch · HuggingFace Transformers · PIL
 
 🔗 Repository
-[https://github.com/SSEUNGSSSEUNGWOO/diabetes-food-detection](https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection.git)
+[https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection](https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection)
 
 ---
 
