@@ -23,16 +23,19 @@ B.S. in Computer Science
 
 # 🚀 Featured Projects
 
-### 📰 News Classification & Summarization
+### 📰 Newszips — 뉴스 자동 분류 · 요약 서비스
 
-뉴스 데이터를 크롤링하여 **TF-IDF 기반으로 분류**하고
-**GPT 기반 요약 시스템**을 구현한 프로젝트
+유튜브 뉴스 영상을 크롤링하여 **BERT 카테고리 분류 + TF-IDF 핵심어 추출 + GPT 요약**까지 자동화하고
+React 앱으로 서비스하는 풀스택 프로젝트
 
 **Tech Stack**
-Python · NLP · TF-IDF · FastAPI · t-SNE
+Python · BERT · TF-IDF · OpenAI API · FastAPI · React · Supabase · t-SNE
 
 🔗 Repository
-[https://github.com/SSEUNGSSSEUNGWOO/news-classification-summary](https://github.com/SSEUNGSSEUNGWOO/news-analysis-pipeline.git)
+[https://github.com/SSEUNGSSEUNGWOO/newszips](https://github.com/SSEUNGSSEUNGWOO/newszips)
+
+🌐 Live
+[https://newszips.vercel.app](https://newszips.vercel.app)
 
 ---
 
