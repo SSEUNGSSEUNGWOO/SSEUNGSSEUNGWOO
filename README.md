@@ -61,6 +61,23 @@ Python · PyTorch · HuggingFace Transformers · PIL
 
 ---
 
+### 🐶 Dog AI Agent — 강아지 탐지 · 견종 분류 서비스 (팀 프로젝트)
+
+이미지에서 강아지를 탐지하고 견종을 분류한 뒤, 견종별 유전병 정보 기반으로 레시피 이미지를 자동 생성하는 AI 서비스.
+
+**담당한 부분**
+- 강아지 여부 판별 Object Detection 구현
+- 견종 분류 모델 성능 개선 (모델 전담)
+- Grad-CAM으로 모델이 어떤 특징을 보고 판단하는지 시각화
+
+**Tech Stack**
+Python · PyTorch · HuggingFace Transformers · Grad-CAM
+
+🔗 Organization
+[https://github.com/Dog-AI-Agent](https://github.com/Dog-AI-Agent)
+
+---
+
 # 🧠 Skills
 
 ### Programming
