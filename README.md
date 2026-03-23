@@ -97,20 +97,20 @@ Python · PyTorch · HuggingFace Transformers · PIL
 # 🧠 Skills
 
 ### Programming
-
-Python · SQL
-
-### Data Analysis
-
-Pandas · NumPy · Data Visualization
+Python · SQL · TypeScript
 
 ### Machine Learning / AI
+TensorFlow · Keras · PyTorch · HuggingFace Transformers
+BERT fine-tuning · EfficientNetB0 · TF-IDF · Grad-CAM · t-SNE
 
-Machine Learning · NLP
+### Backend / Infra
+FastAPI · Supabase · Railway · GitHub Actions
+
+### Frontend
+React
 
 ### Tools
-
-GitHub · Jupyter Notebook · FastAPI
+Git · Jupyter Notebook · Vercel
 
 ---
 
