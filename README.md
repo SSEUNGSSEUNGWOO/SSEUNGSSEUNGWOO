@@ -34,6 +34,7 @@ B.S. in Computer Science
 | Phase | 내용 | Top-1 Acc | Top-5 Acc |
 |-------|------|-----------|-----------|
 | Phase 1 | 백본 비교 — MobileNetV2 베이스라인 | 77.90% | 96.72% |
+| Phase 1 | 백본 비교 — MobileNetV3Large | 78.18% | 96.78% |
 | Phase 1 | 백본 비교 — EfficientNetB0 선정 | 85.52% | 98.67% |
 | Phase 2 | **Validation set 구축** + epoch 30으로 확장 | 86.99% | 98.96% |
 | Phase 3 | EarlyStopping 적용 (17 epoch 자동 종료) | 86.96% | 98.92% |
