@@ -1,8 +1,9 @@
 # 👋 Hi, I'm Seungwoo Jang
 
-💡 **NLP / Computer Vision / AI 서비스 개발**
+💡 **AI 에이전트 · NLP · Computer Vision · AI 서비스 개발**
 
-NLP와 Computer Vision 모델을 직접 학습시키고 서비스로 배포하는 것에 관심이 많습니다.
+멀티 에이전트 오케스트레이션부터 NLP, Computer Vision 모델 학습까지,
+모델 선택과 설계 결정을 직접 구현하고 서비스로 배포하는 것에 관심이 많습니다.
 모델 성능 개선부터 실제 운영까지 end-to-end로 구현하는 것을 목표로 합니다.
 
 모델 선택부터 설계 결정까지, 단순히 작동하는 것에 그치지 않고 "왜 이 선택인가"에 대한 근거를 먼저 생각하는 개발자입니다.
@@ -133,9 +134,10 @@ Python · SQL · TypeScript
 ### Machine Learning / AI
 TensorFlow · Keras · PyTorch · HuggingFace Transformers
 BERT fine-tuning · EfficientNetB0 · TF-IDF · Grad-CAM · t-SNE
+멀티 에이전트 오케스트레이션 · RAG · ReAct
 
 ### Backend / Infra
-FastAPI · Supabase · Railway · GitHub Actions
+FastAPI · Flask · SSE · Supabase · Railway · GitHub Actions
 
 ### Frontend
 React
@@ -147,6 +149,6 @@ Git · Jupyter Notebook · Vercel
 
 # 📊 GitHub Stats
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=SSEUNGSSSEUNGWOO\&show_icons=true)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=SSEUNGSSEUNGWOO\&show_icons=true)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SSEUNGSSSEUNGWOO\&layout=compact)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SSEUNGSSEUNGWOO\&layout=compact)
