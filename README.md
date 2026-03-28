@@ -54,6 +54,55 @@ Python · Flask · SSE · Claude API (Haiku / Sonnet) · Supabase
 
 ---
 
+### 📈 Alpha Agents — 암호화폐 자동매매 ML 시스템
+
+5개 코인(BTC·ETH·SOL·BNB·XRP)을 대상으로 XGBoost가 SELL/HOLD/BUY를 분류하고, 단일 포트폴리오 풀에서 동적으로 자금을 배분하는 자동매매 시스템. Railway에 실배포, 15분마다 신호를 생성한다.
+
+**왜 이렇게 설계했나?**
+
+- **XGBoost를 선택한 이유** — 금융 시계열은 비선형 관계가 강하고 피처 수가 많다. 딥러닝보다 과적합에 강하고, 피처 중요도를 직접 확인해서 모델이 어떤 지표를 보고 판단하는지 해석할 수 있다.
+
+- **look-ahead bias를 방지한 이유** — 미래 데이터가 학습에 섞이면 백테스트 성능은 높아 보이지만 실제 배포에서 무너진다. shuffle=False, 시간 순서 기준 70/15/15 split으로 Test 셋을 완전한 unseen 데이터로 유지했다.
+
+- **시간 감쇠 가중치를 쓴 이유** — 3년 전 시장 패턴과 최근 패턴은 다르다. `weight = exp(-ln(2) × days_old / 180)`으로 최근 데이터에 더 높은 가중치를 줘서 현재 시장에 더 잘 맞는 모델을 만들었다.
+
+- **모델을 파일 대신 PostgreSQL에 저장한 이유** — Railway는 재배포 시 파일 시스템이 초기화된다. pickle을 BYTEA로 DB에 저장하고, 주간 재학습 후 F1이 개선됐을 때만 핫스왑하는 방식으로 모델 영속성을 확보했다.
+
+- **단일 포트폴리오 풀로 전환한 이유** — 코인별로 자금을 고정 배분하면 한 코인에 기회가 몰려도 다른 코인의 자금을 활용할 수 없다. 전체 잔액을 하나의 풀로 관리하고 신호 강도에 따라 동적으로 배분한다.
+
+**Tech Stack**
+Python · XGBoost · TA-Lib · PostgreSQL · FastAPI · Railway · GitHub Actions
+
+🔗 Repository
+[https://github.com/SSEUNGSSEUNGWOO/alpha-agents](https://github.com/SSEUNGSSEUNGWOO/alpha-agents)
+
+---
+
+### 📰 Newszips — 뉴스 자동 분류 · 요약 서비스
+
+유튜브 뉴스 영상을 크롤링해서 **카테고리 분류 → 핵심어 추출 → AI 요약**까지 자동화하고, React 앱으로 서비스하는 풀스택 프로젝트.
+
+**왜 이렇게 설계했나?**
+
+- **BERT로 분류한 이유** — 키워드 매칭 방식은 "삼성 화재"를 사회 뉴스로 분류하는 등 문맥을 못 읽는 문제가 있었음. klue/bert-base를 fine-tuning해서 문맥 기반 분류로 해결 (6개 카테고리, 정확도 96%)
+
+- **TF-IDF를 카테고리별로 따로 학습한 이유** — 전체 corpus 기준 IDF를 쓰면 "대통령"이 정치 기사와 스포츠 기사에서 같은 가중치를 가짐. 카테고리 내부 IDF로 계산해야 그 기사에서 실제로 특이한 단어가 핵심어로 올라옴
+
+- **LLM에 본문을 그대로 안 넘긴 이유** — 본문을 직접 요약시키면 모델이 문체나 도입부에 끌려가서 같은 사건도 요약이 매번 달라짐. TF-IDF로 핵심어를 먼저 추출하고 프롬프트에 명시해서 LLM이 집중할 포인트를 유도함
+
+- **t-SNE를 쓴 이유** — BERT 임베딩을 2D로 시각화해서 분류 결과가 실제로 의미적으로 클러스터링되는지 검증. 유사 기사 추천에도 유클리드 거리를 활용
+
+**Tech Stack**
+Python · BERT (klue/bert-base) · TF-IDF · OpenAI gpt-4o-mini · FastAPI · React · Supabase · t-SNE · GitHub Actions
+
+🔗 Repository
+[https://github.com/SSEUNGSSEUNGWOO/newszips](https://github.com/SSEUNGSSEUNGWOO/newszips)
+
+🌐 Live
+[https://newszips.vercel.app](https://newszips.vercel.app)
+
+---
+
 ### 🐶 Dog AI Agent — 강아지 품종 판별 · 맞춤 레시피 추천 서비스 (팀 프로젝트)
 
 강아지 이미지를 업로드하면 품종을 판별하고, 해당 품종의 유전병 정보를 바탕으로 맞춤 식재료와 레시피를 추천해주는 AI 서비스.
@@ -84,55 +133,6 @@ Python · TensorFlow · Keras · EfficientNetB0 · MobileNetV2 · Grad-CAM
 
 🔗 Model Experiments
 [https://github.com/Dog-AI-Agent/dog-classifier-models](https://github.com/Dog-AI-Agent/dog-classifier-models)
-
----
-
-### 📰 Newszips — 뉴스 자동 분류 · 요약 서비스
-
-유튜브 뉴스 영상을 크롤링해서 **카테고리 분류 → 핵심어 추출 → AI 요약**까지 자동화하고, React 앱으로 서비스하는 풀스택 프로젝트.
-
-**왜 이렇게 설계했나?**
-
-- **BERT로 분류한 이유** — 키워드 매칭 방식은 "삼성 화재"를 사회 뉴스로 분류하는 등 문맥을 못 읽는 문제가 있었음. klue/bert-base를 fine-tuning해서 문맥 기반 분류로 해결 (6개 카테고리, 정확도 96%)
-
-- **TF-IDF를 카테고리별로 따로 학습한 이유** — 전체 corpus 기준 IDF를 쓰면 "대통령"이 정치 기사와 스포츠 기사에서 같은 가중치를 가짐. 카테고리 내부 IDF로 계산해야 그 기사에서 실제로 특이한 단어가 핵심어로 올라옴
-
-- **LLM에 본문을 그대로 안 넘긴 이유** — 본문을 직접 요약시키면 모델이 문체나 도입부에 끌려가서 같은 사건도 요약이 매번 달라짐. TF-IDF로 핵심어를 먼저 추출하고 프롬프트에 명시해서 LLM이 집중할 포인트를 유도함
-
-- **t-SNE를 쓴 이유** — BERT 임베딩을 2D로 시각화해서 분류 결과가 실제로 의미적으로 클러스터링되는지 검증. 유사 기사 추천에도 유클리드 거리를 활용
-
-**Tech Stack**
-Python · BERT (klue/bert-base) · TF-IDF · OpenAI gpt-4o-mini · FastAPI · React · Supabase · t-SNE · GitHub Actions
-
-🔗 Repository
-[https://github.com/SSEUNGSSEUNGWOO/newszips](https://github.com/SSEUNGSSEUNGWOO/newszips)
-
-🌐 Live
-[https://newszips.vercel.app](https://newszips.vercel.app)
-
----
-
-### 📈 Alpha Agents — 암호화폐 자동매매 ML 시스템
-
-5개 코인(BTC·ETH·SOL·BNB·XRP)을 대상으로 XGBoost가 SELL/HOLD/BUY를 분류하고, 단일 포트폴리오 풀에서 동적으로 자금을 배분하는 자동매매 시스템. Railway에 실배포, 15분마다 신호를 생성한다.
-
-**왜 이렇게 설계했나?**
-
-- **XGBoost를 선택한 이유** — 금융 시계열은 비선형 관계가 강하고 피처 수가 많다. 딥러닝보다 과적합에 강하고, 피처 중요도를 직접 확인해서 모델이 어떤 지표를 보고 판단하는지 해석할 수 있다.
-
-- **look-ahead bias를 방지한 이유** — 미래 데이터가 학습에 섞이면 백테스트 성능은 높아 보이지만 실제 배포에서 무너진다. shuffle=False, 시간 순서 기준 70/15/15 split으로 Test 셋을 완전한 unseen 데이터로 유지했다.
-
-- **시간 감쇠 가중치를 쓴 이유** — 3년 전 시장 패턴과 최근 패턴은 다르다. `weight = exp(-ln(2) × days_old / 180)`으로 최근 데이터에 더 높은 가중치를 줘서 현재 시장에 더 잘 맞는 모델을 만들었다.
-
-- **모델을 파일 대신 PostgreSQL에 저장한 이유** — Railway는 재배포 시 파일 시스템이 초기화된다. pickle을 BYTEA로 DB에 저장하고, 주간 재학습 후 F1이 개선됐을 때만 핫스왑하는 방식으로 모델 영속성을 확보했다.
-
-- **단일 포트폴리오 풀로 전환한 이유** — 코인별로 자금을 고정 배분하면 한 코인에 기회가 몰려도 다른 코인의 자금을 활용할 수 없다. 전체 잔액을 하나의 풀로 관리하고 신호 강도에 따라 동적으로 배분한다.
-
-**Tech Stack**
-Python · XGBoost · TA-Lib · PostgreSQL · FastAPI · Railway · GitHub Actions
-
-🔗 Repository
-[https://github.com/SSEUNGSSEUNGWOO/alpha-agents](https://github.com/SSEUNGSSEUNGWOO/alpha-agents)
 
 ---
 
