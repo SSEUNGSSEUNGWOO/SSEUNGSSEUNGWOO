@@ -76,6 +76,9 @@ Python · XGBoost · TA-Lib · PostgreSQL · FastAPI · Railway · GitHub Action
 🔗 Repository
 [https://github.com/SSEUNGSSEUNGWOO/alpha-agents](https://github.com/SSEUNGSSEUNGWOO/alpha-agents)
 
+🌐 Live
+[https://alpha-agents-production.up.railway.app](https://alpha-agents-production.up.railway.app)
+
 ---
 
 ### 📰 Newszips — 뉴스 자동 분류 · 요약 서비스
