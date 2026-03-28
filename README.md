@@ -113,6 +113,7 @@ Python · XGBoost · TA-Lib · PostgreSQL · FastAPI · Railway · GitHub Action
 **담당한 부분**
 - 강아지 여부 판별 Object Detection 구현 (MobileNetV2 ImageNet, COCO 클래스 범위로 탐지)
 - **백본 비교 실험 → EfficientNetB0 선정 후 단계적 성능 개선** (120종 견종 분류)
+- 레시피 프롬프트 기반 DALL-E 3 음식 이미지 자동 생성 — 조리 단계 키워드를 파싱해 최종 플레이팅 묘사로 변환
 
 | Phase | 내용 | Top-1 Acc | Top-5 Acc |
 |-------|------|-----------|-----------|
