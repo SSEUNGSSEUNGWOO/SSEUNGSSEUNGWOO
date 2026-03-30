@@ -54,6 +54,34 @@ Python · Flask · SSE · Claude API (Haiku / Sonnet) · Supabase
 
 ---
 
+### 🛠️ OpsAgent — 도메인 적응형 내부 AI 코파일럿 플랫폼
+
+문서·CSV·지식 그래프를 결합해 운영 의사결정을 지원하는 AI 시스템. 어떤 업종이든 파일을 올리면 즉시 작동한다.
+
+**왜 이렇게 설계했나?**
+
+- **단순 RAG 챗봇을 넘어선 이유** — 문서 검색만으로는 "재고 위험 상품이 뭔지, 회의에서 어떤 결정을 했는지, 다음에 뭘 해야 하는지"를 한 번에 답할 수 없다. 문서(RAG) + 정형 데이터(CSV) + 지식 그래프(NetworkX)를 결합해서 실무 의사결정 흐름을 직접 보조하도록 설계했다.
+
+- **도메인을 무관하게 만든 이유** — 업종마다 entity 타입과 용어가 다르다. 7개 업종 프리셋 + Claude 동적 분석으로 도메인 설정을 자동화하고, 모든 프롬프트에 `{domain_context}`를 주입해서 어떤 업종이든 즉시 적응하게 만들었다.
+
+- **지식 그래프 빌드 경로를 4가지로 분리한 이유** — 파일 타입마다 관계 추출 방식이 다르다. 일반 문서는 Claude로 entity/relation을 JSON 추출하고, CSV는 스키마 기반 2-pass, Python은 AST 분석으로 각각 최적 경로를 탄다.
+
+- **RAG 컬렉션을 도메인별로 분리한 이유** — 단일 컬렉션에 쌓으면 제조업 문서가 금융 질의에 검색돼서 노이즈가 생긴다. `collection_name` 프로퍼티로 도메인마다 독립된 ChromaDB 컬렉션을 사용한다.
+
+**핵심 구현**
+RAG + Knowledge Graph 결합 · 도메인 적응형 프롬프트 · 4가지 KG 빌드 경로 · 3-Layer 채팅 라우터 (data / doc / combined)
+
+**Tech Stack**
+Python · Streamlit · Claude API · ChromaDB · NetworkX · pyvis
+
+🔗 Repository
+[https://github.com/SSEUNGSSEUNGWOO/OpsAgent](https://github.com/SSEUNGSSEUNGWOO/OpsAgent)
+
+🌐 Live
+[https://sseungsseungwoo-opsagent.streamlit.app](https://sseungsseungwoo-opsagent.streamlit.app)
+
+---
+
 ### 📰 Newszips — 뉴스 자동 분류 · 요약 서비스
 
 유튜브 뉴스 영상을 크롤링해서 **카테고리 분류 → 핵심어 추출 → AI 요약**까지 자동화하고, React 앱으로 서비스하는 풀스택 프로젝트.
@@ -162,10 +190,10 @@ Python · SQL · TypeScript
 TensorFlow · Keras · PyTorch · HuggingFace Transformers
 BERT fine-tuning · EfficientNetB0 · TF-IDF · Grad-CAM · t-SNE
 XGBoost · 시계열 피처 엔지니어링 · TA-Lib
-멀티 에이전트 오케스트레이션 · RAG · ReAct
+멀티 에이전트 오케스트레이션 · RAG · ReAct · Knowledge Graph
 
 ### Backend / Infra
-FastAPI · Flask · SSE · Supabase · Railway · GitHub Actions
+FastAPI · Flask · SSE · Streamlit · Supabase · ChromaDB · NetworkX · Railway · GitHub Actions
 
 ### Frontend
 React
