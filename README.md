@@ -43,6 +43,16 @@
 
 실제로 돌려보면서 발견한 버그들(코드 잘림, import 불일치, rate limit, 설명 텍스트 혼입)을 분석해 시스템을 반복 개선했다.
 
+**한계 — 그리고 다음 프로젝트로**
+
+반복 개선하면서 구조적 한계 세 가지가 명확해졌다.
+
+- **생성된 코드가 실행 불가 수준** — 에이전트들이 서로 뭘 만드는지 모른 채 병렬 생성해서 import 경로·메서드명이 맞지 않는 코드가 나왔다. 합의 체크리스트를 프롬프트에 삽입하고 순차 실행으로 전환해도 완전히 해결되지 않았다.
+- **단일 프로세스 내 역할 전환의 한계** — 하나의 대화 안에서 에이전트 역할을 바꿔도 이전 역할의 맥락이 남는다. Flask 앱 안에서 프롬프트로만 페르소나를 분리하는 방식의 근본적인 한계였다.
+- **Critic이 없다** — team_gate가 투표로 품질을 걸러내지만, 코드를 실제로 실행하거나 논리를 검증하는 단계가 없다. 투표 통과 ≠ 동작하는 코드였다.
+
+이 세 가지가 Agent Pipeline의 출발점이 됐다.
+
 **핵심 구현**
 멀티 에이전트 오케스트레이션 · 에이전트 RAG (과거 유사 태스크 검색 → 프롬프트 주입) · ReAct 루프
 
@@ -56,7 +66,7 @@ Python · Flask · SSE · Claude API (Haiku / Sonnet) · Supabase
 
 ### 🏭 Agent Pipeline — 자율 에이전트 빌드 팩토리
 
-태스크를 입력하면 AI 에이전트 팀이 **계획 → 구현 → 검토 → 저장** 파이프라인을 자동으로 실행해 완성된 Python 프로젝트를 만들어낸다. 태스크가 소진되면 Claude가 새 아이디어를 생성해 무한히 계속된다.
+AX Team에서 드러난 한계(실행 불가 코드·컨텍스트 오염·Critic 부재)를 해결하기 위해 구조를 다시 설계했다. 태스크를 입력하면 AI 에이전트 팀이 **계획 → 구현 → 검토 → 저장** 파이프라인을 자동으로 실행해 완성된 Python 프로젝트를 만들어낸다. 태스크가 소진되면 Claude가 새 아이디어를 생성해 무한히 계속된다.
 
 **왜 이렇게 설계했나?**
 
@@ -78,34 +88,6 @@ Python · Claude Code CLI · subprocess
 
 🔗 Repository
 [https://github.com/SSEUNGSSEUNGWOO/agent-pipeline](https://github.com/SSEUNGSSEUNGWOO/agent-pipeline)
-
----
-
-### 🛠️ OpsAgent — 도메인 적응형 내부 AI 코파일럿 플랫폼
-
-문서·CSV·지식 그래프를 결합해 운영 의사결정을 지원하는 AI 시스템. 어떤 업종이든 파일을 올리면 즉시 작동한다.
-
-**왜 이렇게 설계했나?**
-
-- **단순 RAG 챗봇을 넘어선 이유** — 문서 검색만으로는 "재고 위험 상품이 뭔지, 회의에서 어떤 결정을 했는지, 다음에 뭘 해야 하는지"를 한 번에 답할 수 없다. 문서(RAG) + 정형 데이터(CSV) + 지식 그래프(NetworkX)를 결합해서 실무 의사결정 흐름을 직접 보조하도록 설계했다.
-
-- **도메인을 무관하게 만든 이유** — 업종마다 entity 타입과 용어가 다르다. 7개 업종 프리셋 + Claude 동적 분석으로 도메인 설정을 자동화하고, 모든 프롬프트에 `{domain_context}`를 주입해서 어떤 업종이든 즉시 적응하게 만들었다.
-
-- **지식 그래프 빌드 경로를 4가지로 분리한 이유** — 파일 타입마다 관계 추출 방식이 다르다. 일반 문서는 Claude로 entity/relation을 JSON 추출하고, CSV는 스키마 기반 2-pass, Python은 AST 분석으로 각각 최적 경로를 탄다.
-
-- **RAG 컬렉션을 도메인별로 분리한 이유** — 단일 컬렉션에 쌓으면 제조업 문서가 금융 질의에 검색돼서 노이즈가 생긴다. `collection_name` 프로퍼티로 도메인마다 독립된 ChromaDB 컬렉션을 사용한다.
-
-**핵심 구현**
-RAG + Knowledge Graph 결합 · 도메인 적응형 프롬프트 · 4가지 KG 빌드 경로 · 3-Layer 채팅 라우터 (data / doc / combined)
-
-**Tech Stack**
-Python · Streamlit · Claude API · ChromaDB · NetworkX · pyvis
-
-🔗 Repository
-[https://github.com/SSEUNGSSEUNGWOO/OpsAgent](https://github.com/SSEUNGSSEUNGWOO/OpsAgent)
-
-🌐 Live
-[https://sseungsseungwoo-opsagent.streamlit.app](https://sseungsseungwoo-opsagent.streamlit.app)
 
 ---
 
@@ -131,33 +113,6 @@ Python · BERT (klue/bert-base) · TF-IDF · OpenAI gpt-4o-mini · FastAPI · Re
 
 🌐 Live
 [https://newszips.vercel.app](https://newszips.vercel.app)
-
----
-
-### 📈 Alpha Agents — 암호화폐 자동매매 ML 시스템
-
-5개 코인(BTC·ETH·SOL·BNB·XRP)을 대상으로 XGBoost가 SELL/HOLD/BUY를 분류하고, 단일 포트폴리오 풀에서 동적으로 자금을 배분하는 자동매매 시스템. Railway에 실배포, 15분마다 신호를 생성한다.
-
-**왜 이렇게 설계했나?**
-
-- **XGBoost를 선택한 이유** — 금융 시계열은 비선형 관계가 강하고 피처 수가 많다. 딥러닝보다 과적합에 강하고, 피처 중요도를 직접 확인해서 모델이 어떤 지표를 보고 판단하는지 해석할 수 있다.
-
-- **look-ahead bias를 방지한 이유** — 미래 데이터가 학습에 섞이면 백테스트 성능은 높아 보이지만 실제 배포에서 무너진다. shuffle=False, 시간 순서 기준 70/15/15 split으로 Test 셋을 완전한 unseen 데이터로 유지했다.
-
-- **시간 감쇠 가중치를 쓴 이유** — 3년 전 시장 패턴과 최근 패턴은 다르다. `weight = exp(-ln(2) × days_old / 180)`으로 최근 데이터에 더 높은 가중치를 줘서 현재 시장에 더 잘 맞는 모델을 만들었다.
-
-- **모델을 파일 대신 PostgreSQL에 저장한 이유** — Railway는 재배포 시 파일 시스템이 초기화된다. pickle을 BYTEA로 DB에 저장하고, 주간 재학습 후 F1이 개선됐을 때만 핫스왑하는 방식으로 모델 영속성을 확보했다.
-
-- **단일 포트폴리오 풀로 전환한 이유** — 코인별로 자금을 고정 배분하면 한 코인에 기회가 몰려도 다른 코인의 자금을 활용할 수 없다. 전체 잔액을 하나의 풀로 관리하고 신호 강도에 따라 동적으로 배분한다.
-
-**Tech Stack**
-Python · XGBoost · TA-Lib · PostgreSQL · FastAPI · Railway · GitHub Actions
-
-🔗 Repository
-[https://github.com/SSEUNGSSEUNGWOO/alpha-agents](https://github.com/SSEUNGSSEUNGWOO/alpha-agents)
-
-🌐 Live
-[https://alpha-agents-production.up.railway.app](https://alpha-agents-production.up.railway.app)
 
 ---
 
