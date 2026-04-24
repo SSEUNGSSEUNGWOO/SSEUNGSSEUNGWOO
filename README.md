@@ -116,6 +116,23 @@ Python · BERT (klue/bert-base) · TF-IDF · OpenAI gpt-4o-mini · FastAPI · Re
 
 ---
 
+### 🛠️ OPS Decision Copilot — 도메인 적응형 운영 의사결정 AI 플랫폼 (팀 프로젝트)
+
+문서·CSV·GraphRAG 지식 그래프를 결합해 운영 의사결정을 지원하는 AI 플랫폼. 업종 프리셋 7개와 Claude 동적 분석으로 어떤 도메인이든 파일만 올리면 즉시 적응한다.
+
+**담당한 부분**
+- **풀스택 설계 및 배포** — Next.js 15(프론트) + FastAPI(백) 아키텍처 설계, SSE 스트리밍 연동, 전체 배포 담당
+- FastAPI에서 Next.js Server Components로 스트리밍 응답 전달하는 구조 설계
+- 도메인별 GraphRAG 파이프라인(문서 → entity/relation 추출 → 커뮤니티 감지 → 요약)과 프론트 시각화 연결
+
+**Tech Stack**
+Python · FastAPI · Next.js 15 · Claude API · Supabase pgvector · NetworkX · pyvis
+
+🔗 Repository
+[https://github.com/swim-seo/ops-decision-copilot](https://github.com/swim-seo/ops-decision-copilot)
+
+---
+
 ### 🐶 Dog AI Agent — 강아지 품종 판별 · 맞춤 레시피 추천 서비스 (팀 프로젝트)
 
 강아지 이미지를 업로드하면 품종을 판별하고, 해당 품종의 유전병 정보를 바탕으로 맞춤 식재료와 레시피를 추천해주는 AI 서비스.
