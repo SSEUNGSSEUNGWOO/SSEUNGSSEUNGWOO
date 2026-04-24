@@ -150,19 +150,6 @@ Python · TensorFlow · Keras · EfficientNetB0 · MobileNetV2 · Grad-CAM
 
 ---
 
-### 🍎 Diabetes Food Risk Detection
-
-HuggingFace DETR 모델을 활용해 **Object Detection 파이프라인을 end-to-end로 직접 구현**한 프로젝트.
-모델 로딩부터 bounding box 시각화까지 전체 흐름을 직접 구현했습니다.
-
-**Tech Stack**
-Python · PyTorch · HuggingFace Transformers · PIL
-
-🔗 Repository
-[https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection](https://github.com/SSEUNGSSEUNGWOO/diabetes-food-detection)
-
----
-
 # 🧠 Skills
 
 ### Programming
