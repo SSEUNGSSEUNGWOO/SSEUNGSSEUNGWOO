@@ -43,6 +43,6 @@ Agent Pipeline:
 
 ## 🏢 Where
 
-**케이브레인컴퍼니** · 공공AI센터 사업4팀
+**케이브레인컴퍼니** · 공공AI센터 · HRD사업실
 
 📧 jsw7980@gmail.com
