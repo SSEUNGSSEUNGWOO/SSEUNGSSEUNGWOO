@@ -7,7 +7,7 @@
 |:---:|:---:|
 | 행안부·NIA AI 챔피언 사업 | kbrain-ems · 조달핏 · Agent Pipeline |
 | 선발·교육·인증평가 운영 | Next.js 16 · Supabase · RAG |
-| 운영자 6~7명 · cohort 2개 | 1인 풀스택 설계·구현 |
+| 운영자 10명+ · 동시 cohort 다수 | 1인 풀스택 설계·구현 |
 
 ---
 
@@ -15,16 +15,19 @@
 
 ```yaml
 kbrain-ems:
+  what:       AI 챔피언 사업 교육 운영 사이클 전반을 자동화한 사내 production 시스템
   planning:   운영자 입장에서 문제 정의 · 기획 · 정책 설계
   building:   Next.js 16 · Supabase · Server Actions · 1인 풀스택
-  scale:      운영자 6~7명 · 동시 cohort 2개 · production
+  scale:      운영자 10명+ · 동시 cohort 다수 · production
 
 조달핏:
+  what:       공공조달 공고와 회사 수주역량을 의미 매칭으로 연결하는 사내 도구
   planning:   사내 수주 영업 프로세스 분석 · 도입 추진
   building:   나라장터 수집 × 회사 수주내역 RAG · BM25 baseline backtest
   status:     PoC 단계 · 사내 도입 추진 중
 
 Agent Pipeline:
+  what:       작업 1개로 완성된 Python 프로젝트를 만들어내는 자율 에이전트 시스템
   planning:   AX Team Office 한계 분석 → 후속 시스템 설계
   building:   Claude Code CLI subprocess orchestration · 무한 critic 루프
 ```
