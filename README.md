@@ -3,32 +3,9 @@
   <img src="assets/banner-light.svg" width="100%" alt="Seungwoo Jang — 기획·운영과 개발을 한 사람이 직접 합니다.">
 </picture>
 
-<br>
+<img src="assets/sections/roles.svg" width="100%" alt="기획·운영 × 풀스택 개발. 행안부·NIA AI 챔피언 사업 기획·운영, 선발·교육·인증평가 전 주기, 운영자 10명+, 누적 기수 41개. 운영하면서 발견한 문제를 직접 시스템으로, Next.js 16·Supabase·FastAPI·pgvector, 1인 설계·구현·배포.">
 
-<table width="100%">
-  <tr>
-    <th width="50%" align="left">기획 · 운영</th>
-    <th width="50%" align="left">풀스택 개발</th>
-  </tr>
-  <tr valign="top">
-    <td>
-      <img src="assets/spacer.svg" width="500" height="1" alt=""><br>
-      행안부 · NIA <b>AI 챔피언</b> 사업<br>
-      선발 · 교육 · 인증평가 운영<br>
-      운영자 10명+ · 누적 기수 41개
-    </td>
-    <td>
-      <img src="assets/spacer.svg" width="500" height="1" alt=""><br>
-      운영하면서 발견한 문제를 직접 시스템으로<br>
-      Next.js 16 · Supabase · FastAPI · pgvector · Claude API<br>
-      1인 풀스택 설계 · 구현 · 배포
-    </td>
-  </tr>
-</table>
-
-<br>
-
-## Projects
+<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects">
 
 <table width="100%">
   <tr valign="top">
@@ -69,30 +46,8 @@
   </tr>
 </table>
 
-<br>
+<img src="assets/sections/think.svg" width="100%" alt="What I think. 01 운영자로서 발견한 문제만 진짜 문제다. 운영도 코드도 한 사람이 하면 잘못 푸는 일이 줄어든다. 02 도메인 깊이가 없으면 AI는 가짜 문제만 푼다. 03 평가 없는 PoC는 데모일 뿐. backtest 1번이 도입 결정의 무기. 04 가장 비싼 사람은 기획·운영 + 코드 + 도메인 hybrid.">
 
-## What I think
+<img src="assets/sections/stack.svg" width="100%" alt="Stack. Python, TypeScript, Next.js 16, React 19, FastAPI, Tailwind. Supabase, Postgres, pgvector, Vercel, GitHub Actions, Bun·uv. Claude API, Claude Code CLI, RAG, GraphRAG, Multi-agent orchestration.">
 
-> **운영자로서 발견한 문제만 진짜 문제다.** 운영도 코드도 한 사람이 하면 잘못 푸는 일이 줄어든다.
->
-> 도메인 깊이가 없으면 AI는 가짜 문제만 푼다.
->
-> 평가 없는 PoC는 데모일 뿐. **backtest 1번이 도입 결정의 무기.**
->
-> AI 코딩 시대에 가장 비싼 사람은 **기획·운영 + 코드 + 도메인** hybrid.
-
-<br>
-
-## Stack
-
-**언어·프레임워크** — Python · TypeScript · Next.js 16 · React 19 · FastAPI · Tailwind
-
-**데이터·배포** — Supabase (Postgres · pgvector · Auth) · Vercel · GitHub Actions
-
-**AI** — Claude API · Claude Code CLI · RAG · GraphRAG · Multi-agent orchestration
-
-<br>
-
-## Where
-
-**케이브레인컴퍼니** · 공공AI센터 · HRD사업실 · [jsw7980@gmail.com](mailto:jsw7980@gmail.com)
+<a href="mailto:jsw7980@gmail.com"><img src="assets/sections/where.svg" width="100%" alt="Where. 케이브레인컴퍼니 공공AI센터 HRD사업실. jsw7980@gmail.com"></a>
