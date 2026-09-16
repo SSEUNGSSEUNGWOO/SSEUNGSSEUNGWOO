@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" role="img" aria-label="Agent Pipeline: work → critic → fix 루프">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#f87171"/>
+    </marker>
+    <marker id="arrGreen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#34d399"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="900" fill="#0b1220"/>
+  <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
+    <text x="80" y="110" font-size="30" fill="#94a3b8" letter-spacing="3">AGENT PIPELINE</text>
+    <text x="80" y="170" font-size="44" font-weight="700" fill="#f8fafc">Critic이 PASS를 줄 때까지 다음 단계로 못 간다</text>
+
+    <!-- tasks.json -->
+    <rect x="80" y="300" width="220" height="110" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="190" y="348" font-size="24" fill="#e2e8f0" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace">tasks.json</text>
+    <text x="190" y="384" font-size="18" fill="#94a3b8" text-anchor="middle">태스크 큐</text>
+    <line x1="300" y1="355" x2="380" y2="355" stroke="#94a3b8" stroke-width="3" marker-end="url(#arr)"/>
+
+    <!-- stage box -->
+    <rect x="390" y="230" width="720" height="440" rx="20" fill="#ffffff" fill-opacity="0.03" stroke="#334155" stroke-width="2" stroke-dasharray="8 8"/>
+    <text x="420" y="268" font-size="18" fill="#64748b" letter-spacing="2">STAGE 1 … N</text>
+
+    <!-- work -->
+    <rect x="430" y="300" width="200" height="110" rx="16" fill="#0ea5e9" fill-opacity="0.18" stroke="#38bdf8" stroke-width="2"/>
+    <text x="530" y="348" font-size="26" font-weight="700" fill="#e0f2fe" text-anchor="middle">work</text>
+    <text x="530" y="384" font-size="18" fill="#bae6fd" text-anchor="middle">초안 작성</text>
+
+    <!-- critic -->
+    <rect x="690" y="300" width="200" height="110" rx="16" fill="#f59e0b" fill-opacity="0.18" stroke="#fbbf24" stroke-width="2"/>
+    <text x="790" y="348" font-size="26" font-weight="700" fill="#fef3c7" text-anchor="middle">critic</text>
+    <text x="790" y="384" font-size="18" fill="#fde68a" text-anchor="middle">JSON schema 판정</text>
+    <line x1="630" y1="355" x2="680" y2="355" stroke="#94a3b8" stroke-width="3" marker-end="url(#arr)"/>
+
+    <!-- fix -->
+    <rect x="560" y="500" width="200" height="110" rx="16" fill="#ef4444" fill-opacity="0.18" stroke="#f87171" stroke-width="2"/>
+    <text x="660" y="548" font-size="26" font-weight="700" fill="#fee2e2" text-anchor="middle">fix</text>
+    <text x="660" y="584" font-size="18" fill="#fecaca" text-anchor="middle">피드백 반영 수정</text>
+
+    <!-- FAIL loop: critic -> fix -> critic -->
+    <path d="M790 410 L790 555 L770 555" fill="none" stroke="#f87171" stroke-width="3" marker-end="url(#arrRed)"/>
+    <text x="810" y="480" font-size="18" fill="#f87171">FAIL + feedback</text>
+    <path d="M560 555 L500 555 L500 420" fill="none" stroke="#f87171" stroke-width="3" marker-end="url(#arrRed)"/>
+
+    <!-- PASS -->
+    <line x1="890" y1="355" x2="1090" y2="355" stroke="#34d399" stroke-width="3" marker-end="url(#arrGreen)"/>
+    <text x="990" y="335" font-size="18" fill="#34d399" text-anchor="middle">PASS</text>
+
+    <!-- next stage -->
+    <rect x="1140" y="300" width="220" height="110" rx="16" fill="#10b981" fill-opacity="0.18" stroke="#34d399" stroke-width="2"/>
+    <text x="1250" y="348" font-size="24" font-weight="700" fill="#d1fae5" text-anchor="middle">다음 단계</text>
+    <text x="1250" y="384" font-size="18" fill="#a7f3d0" text-anchor="middle">$prev 로 전달</text>
+
+    <!-- CLI -->
+    <rect x="430" y="740" width="680" height="80" rx="16" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <text x="770" y="790" font-size="22" fill="#e2e8f0" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace">매 호출 = 새 claude -p 세션  ·  컨텍스트 오염 없음  ·  단계 output 캐시</text>
+    <line x1="530" y1="410" x2="530" y2="730" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
+    <line x1="790" y1="610" x2="790" y2="730" stroke="#475569" stroke-width="2" stroke-dasharray="6 6"/>
+  </g>
+</svg>
