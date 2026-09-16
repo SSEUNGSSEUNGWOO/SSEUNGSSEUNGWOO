@@ -5,7 +5,7 @@
 
 <img src="assets/sections/roles.svg" width="100%" alt="기획·운영 × 개발. 선발·교육·인증평가 운영, 현업 요구사항 정리·업무 절차 설계, 운영 담당자 10명 이상이 사용하는 시스템. 업무 시스템 4개 개발·운영, 웹·API·DB 구현 및 배포, 컴퓨터과학 전공(강원대학교).">
 
-<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 업무 서비스 4, 개인 프로젝트 2">
+<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 업무 서비스 4, 개인 프로젝트 2 (모두 운영 중)">
 
 <table width="100%">
   <tr>
@@ -45,8 +45,8 @@
       <b><a href="https://github.com/SSEUNGSSEUNGWOO/agent-pipeline">Agent Pipeline</a></b> — 단계를 선언하면 Critic이 PASS를 낼 때까지 루프를 돌린다. 도메인은 프롬프트 md에만, 매 호출 새 세션. <a href="https://github.com/SSEUNGSSEUNGWOO/AX-team">AX Team</a>의 한계 분석에서 출발.
     </td>
     <td width="50%">
-      <a href="https://github.com/SSEUNGSSEUNGWOO/nolai"><img src="assets/cards/nolai.svg" width="100%" alt="AI쏙 — 어린이가 임베딩·토큰·픽셀 같은 AI 원리를 손으로 만지며 배우는 웹. 개발 중, 2026.08 ~."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/nolai">AI쏙</a></b> — 10~13세 대상. 배포 준비 중.
+      <a href="https://nolai.vercel.app"><img src="assets/cards/nolai.svg" width="100%" alt="AI쏙 — 초등학생이 임베딩·벡터검색·토큰을 손으로 익히는 웹 놀이터. nolai.vercel.app, 개인 프로젝트, 2026.08 ~."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/nolai">AI쏙</a></b> · <a href="https://nolai.vercel.app">nolai.vercel.app</a> — 10~13세 대상, 무료·회원가입 없음. 첫 레슨은 단어를 지도에 놓아 보는 임베딩 체험.
     </td>
   </tr>
 </table>
