@@ -17,11 +17,13 @@
   </tr>
   <tr valign="top">
     <td>
+      <img src="assets/spacer.svg" width="500" height="1" alt=""><br>
       행안부 · NIA <b>AI 챔피언</b> 사업<br>
       선발 · 교육 · 인증평가 운영<br>
       운영자 10명+ · 누적 기수 41개
     </td>
     <td>
+      <img src="assets/spacer.svg" width="500" height="1" alt=""><br>
       운영하면서 발견한 문제를 직접 시스템으로<br>
       Next.js 16 · Supabase · FastAPI · RAG<br>
       1인 풀스택 설계 · 구현 · 배포
