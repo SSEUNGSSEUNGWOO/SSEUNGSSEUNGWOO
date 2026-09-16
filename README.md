@@ -7,13 +7,23 @@
 
 <img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 업무 서비스 4, 개인 프로젝트 2">
 
-<a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="kbrain-ems — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
+<table width="100%">
+  <tr>
+    <td>
+      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="kbrain-ems — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems">kbrain-ems</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 설계 결정과 테이블 29개 설명은 저장소 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems/blob/main/CLAUDE.md">CLAUDE.md</a>.
+    </td>
+  </tr>
+</table>
 
-**[kbrain-ems](https://github.com/SSEUNGSSEUNGWOO/kbrain-ems)** — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 설계 결정과 테이블 29개 설명은 저장소 [CLAUDE.md](https://github.com/SSEUNGSSEUNGWOO/kbrain-ems/blob/main/CLAUDE.md).
-
-<a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="kbrain-cert — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
-
-**[kbrain-cert](https://github.com/SSEUNGSSEUNGWOO/kbrain-cert)** — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 [DECISIONS.md](https://github.com/SSEUNGSSEUNGWOO/kbrain-cert/blob/main/docs/DECISIONS.md).
+<table width="100%">
+  <tr>
+    <td>
+      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="kbrain-cert — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert">kbrain-cert</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert/blob/main/docs/DECISIONS.md">DECISIONS.md</a>.
+    </td>
+  </tr>
+</table>
 
 <table width="100%">
   <tr valign="top">
