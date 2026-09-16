@@ -1,7 +1,7 @@
 """프로필 프로젝트 카드 SVG 생성. 실행: uv run --no-project tools/build_cards.py (tools/src/*.png를 base64로 내장)
 - hero: EMS·CBT 전폭 카드 (1200×540)
 - card: 2단 카드 (1200×750) — 스크린샷 또는 도식
-카드마다 accent 색이 다르고, 상태 칩 색은 공통(운영 중=초록, 개발 중=파랑, 개인=회색).
+카드마다 accent 색이 다르고, 상태 칩 색은 공통(운영 중=초록, 사용 중=연두, 개발 중=파랑).
 """
 import base64, io, pathlib, random
 
@@ -11,7 +11,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 
 FONT = "Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif"
 MONO = "'JetBrains Mono', Consolas, monospace"
-STATUS = {"운영 중": "#34d399", "개발 중": "#38bdf8", "개인": "#94a3b8"}
+STATUS = {"운영 중": "#34d399", "사용 중": "#a3e635", "개발 중": "#38bdf8"}
 MUTED, TEXT, INK = "#94a3b8", "#e2e8f0", "#0b1220"
 
 
@@ -45,9 +45,13 @@ def window(x, y, w, h, accent, img_name=None, zoom=1.0, inner="", cid="win"):
   <rect x="{x}" y="{y}" width="{w}" height="{h}" rx="14" fill="none" stroke="{accent}" stroke-opacity="0.4"/>'''
 
 
+def tw(s, size):
+    return sum(size * (1.0 if ord(ch) > 0x2E7F else 0.62) for ch in s)
+
+
 def status_chip(x, y, label):
     c = STATUS[label]
-    w = 24 + len(label) * 22
+    w = 34 + tw(label, 19) + 16          # 점(34) + 글자 + 오른쪽 여백
     return f'''
   <rect x="{x-w}" y="{y-30}" width="{w}" height="40" rx="20" fill="{c}" fill-opacity="0.15" stroke="{c}" stroke-opacity="0.6"/>
   <circle cx="{x-w+20}" cy="{y-10}" r="5" fill="{c}"/>
@@ -185,7 +189,7 @@ OUTS = {
         "케이브레인컴퍼니 회사 사이트 · 2026.05 ~ · 설계 · 개발 · 운영"),
     "agent-pipeline": card(
         "agent-pipeline", "#fbbf24", "Agent Pipeline", "검토자가 통과시킬 때까지 작업 → 검토 → 수정을 반복하는 오케스트레이터",
-        "개인", "python", "PASS", "까지 다음 단계로 못 간다 · 자동 검토·수정 루프 구현",
+        "사용 중", "python", "PASS", "까지 다음 단계로 못 간다 · 자동 검토·수정 루프 구현",
         "개인 프로젝트 · 2026.03 ~ · AX Team(에이전트 6명 토론 시뮬레이터)의 한계 분석에서 출발", inner=pipeline_inner("#fbbf24")),
     "nolai": card(
         "nolai", "#f472b6", "AI쏙", "초등학생이 임베딩 · 벡터검색 · 토큰을 글이 아니라 손으로 익히는 웹 놀이터",

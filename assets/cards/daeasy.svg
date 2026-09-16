@@ -7,9 +7,9 @@
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
     <text x="60" y="84" font-size="46" font-weight="700" fill="#f8fafc">DAEASY</text>
     
-  <rect x="1028" y="54" width="112" height="40" rx="20" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-opacity="0.6"/>
-  <circle cx="1048" cy="74" r="5" fill="#34d399"/>
-  <text x="1062" y="81" font-size="19" fill="#f8fafc">운영 중</text>
+  <rect x="1021.22" y="54" width="118.78" height="40" rx="20" fill="#34d399" fill-opacity="0.15" stroke="#34d399" stroke-opacity="0.6"/>
+  <circle cx="1041.22" cy="74" r="5" fill="#34d399"/>
+  <text x="1055.22" y="81" font-size="19" fill="#f8fafc">운영 중</text>
     <text x="60" y="124" font-size="24" fill="#e2e8f0">회사 사이트와 인사이트 자동 발행 파이프라인</text>
   </g>
   
