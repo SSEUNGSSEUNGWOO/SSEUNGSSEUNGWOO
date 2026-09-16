@@ -1,16 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-label="Where">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="236" viewBox="0 0 1200 236" role="img" aria-label="Where">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/></pattern>
   </defs>
-  <rect width="1200" height="200" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="200" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="236" rx="24" fill="url(#bg)"/>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-  <text x="48" y="58" font-size="16" fill="#38bdf8" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">04</text>
-  <text x="112" y="60" font-size="30" font-weight="700" fill="#f8fafc">Where</text>
-  <line x1="48" y1="84" x2="1152" y2="84" stroke="#ffffff" stroke-opacity="0.12"/>
-  <text x="48" y="146" font-size="24" font-weight="700" fill="#f8fafc">케이브레인컴퍼니</text>
-  <text x="270" y="146" font-size="20" fill="#94a3b8">공공AI센터 · HRD사업실</text>
-  <rect x="822" y="116" width="330" height="44" rx="22" fill="#38bdf8" fill-opacity="0.12" stroke="#38bdf8" stroke-opacity="0.5"/>
-  <text x="987" y="145" font-size="18" fill="#f8fafc" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace">jansseung@gmail.com</text></g>
+  <text x="48" y="60" font-size="17" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">04</text>
+  <text x="112" y="62" font-size="34" font-weight="700" fill="#f8fafc">Where</text>
+  <line x1="48" y1="88" x2="1152" y2="88" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="48" y="150" font-size="26" font-weight="700" fill="#f8fafc">케이브레인컴퍼니</text>
+  <text x="290" y="150" font-size="21" fill="#94a3b8">공공AI센터 · HRD사업실 · 주임</text>
+  <text x="48" y="196" font-size="21" fill="#e2e8f0">강원대학교 컴퓨터과학전공</text>
+  <rect x="822" y="118" width="330" height="46" rx="23" fill="#2dd4bf" fill-opacity="0.1" stroke="#2dd4bf" stroke-opacity="0.45"/>
+  <text x="987" y="148" font-size="19" fill="#f8fafc" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace">jansseung@gmail.com</text></g>
 </svg>

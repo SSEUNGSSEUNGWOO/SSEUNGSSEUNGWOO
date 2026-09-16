@@ -1,13 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="100" viewBox="0 0 1200 100" role="img" aria-label="Projects">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="104" viewBox="0 0 1200 104" role="img" aria-label="Projects">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/></pattern>
   </defs>
-  <rect width="1200" height="100" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="100" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="104" rx="24" fill="url(#bg)"/>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-  <text x="48" y="58" font-size="16" fill="#34d399" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">01</text>
-  <text x="112" y="60" font-size="30" font-weight="700" fill="#f8fafc">Projects</text>
-  <line x1="48" y1="84" x2="1152" y2="84" stroke="#ffffff" stroke-opacity="0.12"/>
-  <text x="1152" y="60" font-size="15" fill="#94a3b8" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace">5 pinned · 1 next</text></g>
+  <text x="48" y="60" font-size="17" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">01</text>
+  <text x="112" y="62" font-size="34" font-weight="700" fill="#f8fafc">Projects</text>
+  <line x1="48" y1="88" x2="1152" y2="88" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="1152" y="62" font-size="17" fill="#94a3b8" text-anchor="end">업무 서비스 4 · 개인 프로젝트 2</text></g>
 </svg>

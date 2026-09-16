@@ -1,20 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="What I think">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="440" viewBox="0 0 1200 440" role="img" aria-label="How I work">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.045"/></pattern>
   </defs>
-  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
+  <rect width="1200" height="440" rx="24" fill="url(#bg)"/>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-  <text x="48" y="58" font-size="16" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">02</text>
-  <text x="112" y="60" font-size="30" font-weight="700" fill="#f8fafc">How I work</text>
-  <line x1="48" y1="84" x2="1152" y2="84" stroke="#ffffff" stroke-opacity="0.12"/>
-  <text x="48" y="140" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">01</text>
-  <text x="96" y="140" font-size="22"><tspan font-weight="700" fill="#f8fafc">요구분석 → 설계 → 개발 → 운영</tspan><tspan dx="12" fill="#94a3b8">한 사이클을 직접 수행한다. 운영자가 겪은 문제에서 요구사항이 나온다.</tspan></text>
-  <text x="48" y="206" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">02</text>
-  <text x="96" y="206" font-size="22"><tspan font-weight="700" fill="#f8fafc">코드보다 문서 먼저.</tspan><tspan dx="12" fill="#94a3b8">모든 저장소에 설계 문서와 운영 가이드를 둔다.</tspan></text>
-  <text x="48" y="272" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">03</text>
-  <text x="96" y="272" font-size="22"><tspan font-weight="700" fill="#f8fafc">실데이터로 검증하고, 안 맞으면 설계를 버린다.</tspan><tspan dx="12" fill="#94a3b8">조달핏은 수주이력 매칭 1.1% 확인 후 업종 중심으로 피벗.</tspan></text>
-  <text x="48" y="338" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">04</text>
-  <text x="96" y="338" font-size="22"><tspan font-weight="700" fill="#f8fafc">지금 보강 중:</tspan><tspan dx="12" fill="#94a3b8">테스트 자동화(Playwright), DB 접근 권한(RLS) 정책.</tspan></text></g>
+  <text x="48" y="60" font-size="17" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">02</text>
+  <text x="112" y="62" font-size="34" font-weight="700" fill="#f8fafc">How I work</text>
+  <line x1="48" y1="88" x2="1152" y2="88" stroke="#ffffff" stroke-opacity="0.12"/>
+  <text x="48" y="148" font-size="16" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace">01</text>
+  <text x="96" y="148" font-size="23"><tspan font-weight="700" fill="#f8fafc">현업 요구사항을 정리하고,</tspan><tspan dx="10" fill="#94a3b8">구현 후 운영 담당자와 업무 흐름을 검증한다.</tspan></text>
+  <text x="48" y="218" font-size="16" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace">02</text>
+  <text x="96" y="218" font-size="23"><tspan font-weight="700" fill="#f8fafc">주요 설계 결정과 운영 절차를 문서화하고,</tspan><tspan dx="10" fill="#94a3b8">변경 시 갱신한다. 저장소마다 설계 문서와 운영 가이드.</tspan></text>
+  <text x="48" y="288" font-size="16" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace">03</text>
+  <text x="96" y="288" font-size="23"><tspan font-weight="700" fill="#f8fafc">실데이터로 가설을 검증하고,</tspan><tspan dx="10" fill="#94a3b8">결과에 따라 기능 범위와 설계를 조정한다. 조달핏: 수주이력 매칭 1.1% → 업종 중심.</tspan></text>
+  <text x="48" y="358" font-size="16" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace">04</text>
+  <text x="96" y="358" font-size="23"><tspan font-weight="700" fill="#f8fafc">운영 중 확인된 오류를 회귀 테스트에 반영한다.</tspan><tspan dx="10" fill="#94a3b8">테스트 자동화 · RLS 정책은 2026 하반기 보강 중.</tspan></text></g>
 </svg>
