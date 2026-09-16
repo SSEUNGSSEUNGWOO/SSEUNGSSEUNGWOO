@@ -50,4 +50,4 @@
 
 <img src="assets/sections/stack.svg" width="100%" alt="Stack. Python, TypeScript, Next.js 16, React 19, FastAPI, Tailwind. Supabase, Postgres, pgvector, Vercel, GitHub Actions, Bun·uv. Claude API, Claude Code CLI, RAG, GraphRAG, Multi-agent orchestration.">
 
-<a href="mailto:jsw7980@gmail.com"><img src="assets/sections/where.svg" width="100%" alt="Where. 케이브레인컴퍼니 공공AI센터 HRD사업실. jsw7980@gmail.com"></a>
+<a href="mailto:jansseung@gmail.com"><img src="assets/sections/where.svg" width="100%" alt="Where. 케이브레인컴퍼니 공공AI센터 HRD사업실. jansseung@gmail.com"></a>

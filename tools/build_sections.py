@@ -104,7 +104,7 @@ def where() -> str:
   <text x="48" y="146" font-size="24" font-weight="700" fill="#f8fafc">케이브레인컴퍼니</text>
   <text x="270" y="146" font-size="20" fill="{MUTED}">공공AI센터 · HRD사업실</text>
   <rect x="{W-48-330}" y="116" width="330" height="44" rx="22" fill="{SKY}" fill-opacity="0.12" stroke="{SKY}" stroke-opacity="0.5"/>
-  <text x="{W-48-165}" y="145" font-size="18" fill="#f8fafc" text-anchor="middle" font-family="{MONO}">jsw7980@gmail.com</text>'''
+  <text x="{W-48-165}" y="145" font-size="18" fill="#f8fafc" text-anchor="middle" font-family="{MONO}">jansseung@gmail.com</text>'''
     return panel(200, body, "Where")
 
 
