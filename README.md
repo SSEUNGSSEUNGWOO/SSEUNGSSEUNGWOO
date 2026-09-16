@@ -28,7 +28,18 @@
   </tr>
 </table>
 
-**개인 프로젝트** — [Agent Pipeline](https://github.com/SSEUNGSSEUNGWOO/agent-pipeline): 단계를 선언하면 작업 → 검토 → 수정 루프를 검토자가 통과시킬 때까지 반복하는 오케스트레이터 (2026.03 ~) · [AI쏙](https://github.com/SSEUNGSSEUNGWOO/nolai): 어린이용 AI 원리 학습 웹 (개발 중)
+<table width="100%">
+  <tr valign="top">
+    <td width="50%">
+      <a href="https://github.com/SSEUNGSSEUNGWOO/agent-pipeline"><img src="assets/cards/agent-pipeline.svg" width="100%" alt="Agent Pipeline — 검토자가 통과시킬 때까지 작업 → 검토 → 수정을 반복하는 오케스트레이터. 개인 프로젝트, 2026.03 ~."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/agent-pipeline">Agent Pipeline</a></b> — 단계를 선언하면 Critic이 PASS를 낼 때까지 루프를 돌린다. 도메인은 프롬프트 md에만, 매 호출 새 세션. <a href="https://github.com/SSEUNGSSEUNGWOO/AX-team">AX Team</a>의 한계 분석에서 출발.
+    </td>
+    <td width="50%">
+      <a href="https://github.com/SSEUNGSSEUNGWOO/nolai"><img src="assets/cards/nolai.svg" width="100%" alt="AI쏙 — 어린이가 임베딩·토큰·픽셀 같은 AI 원리를 손으로 만지며 배우는 웹. 개발 중, 2026.08 ~."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/nolai">AI쏙</a></b> — 10~13세 대상. 배포 준비 중.
+    </td>
+  </tr>
+</table>
 
 <img src="assets/sections/think.svg" width="100%" alt="How I work. 01 현업 요구사항을 정리하고, 구현 후 운영 담당자와 업무 흐름을 검증한다. 02 주요 설계 결정과 운영 절차를 문서화하고 변경 시 갱신한다. 03 실데이터로 가설을 검증하고 결과에 따라 기능 범위와 설계를 조정한다. 04 운영 중 확인된 오류를 회귀 테스트에 반영한다. 테스트 자동화·RLS 정책은 2026 하반기 보강 중.">
 

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-label="Agent Pipeline — 검토자가 통과시킬 때까지 작업 → 검토 → 수정을 반복하는 오케스트레이터">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
+  </defs>
+  <rect width="1200" height="750" rx="24" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1200" height="6" fill="#fbbf24"/>
+  <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
+    <text x="60" y="84" font-size="46" font-weight="700" fill="#f8fafc">Agent Pipeline</text>
+    
+  <rect x="1072" y="54" width="68" height="40" rx="20" fill="#94a3b8" fill-opacity="0.15" stroke="#94a3b8" stroke-opacity="0.6"/>
+  <circle cx="1092" cy="74" r="5" fill="#94a3b8"/>
+  <text x="1106" y="81" font-size="19" fill="#f8fafc">개인</text>
+    <text x="60" y="124" font-size="24" fill="#e2e8f0">검토자가 통과시킬 때까지 작업 → 검토 → 수정을 반복하는 오케스트레이터</text>
+  </g>
+  
+  <rect x="60" y="150" width="1080" height="470" rx="14" fill="#0f172a" stroke="#ffffff" stroke-opacity="0.14"/>
+  <rect x="60" y="150" width="1080" height="34" rx="14" fill="#1e293b"/>
+  <rect x="60" y="170" width="1080" height="14" fill="#1e293b"/>
+  <circle cx="82" cy="167" r="5" fill="#f87171"/><circle cx="100" cy="167" r="5" fill="#fbbf24"/><circle cx="118" cy="167" r="5" fill="#34d399"/>
+  <clipPath id="w_agent-pipeline"><rect x="60" y="184" width="1080" height="436"/></clipPath>
+  <g clip-path="url(#w_agent-pipeline)">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#94a3b8"/></marker>
+      <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#f87171"/></marker>
+      <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#34d399"/></marker>
+    </defs>
+    <rect x="60" y="184" width="1080" height="436" fill="#0b1220"/>
+    <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
+      
+      <rect x="120" y="254" width="170" height="96" rx="14" fill="#64748b" fill-opacity="0.2" stroke="#94a3b8" stroke-width="2"/>
+      <text x="205.0" y="296.0" font-size="27" font-weight="700" fill="#f8fafc" text-anchor="middle">tasks.json</text>
+      <text x="205.0" y="329.0" font-size="18" fill="#cbd5e1" text-anchor="middle">태스크 큐</text>
+      <line x1="290" y1="302" x2="360" y2="302" stroke="#94a3b8" stroke-width="3" marker-end="url(#a)"/>
+      <rect x="370" y="214" width="560" height="380" rx="18" fill="none" stroke="#334155" stroke-width="2" stroke-dasharray="8 8"/>
+      <text x="394" y="244" font-size="15" fill="#64748b" letter-spacing="2">STAGE 1 … N</text>
+      
+      <rect x="400" y="254" width="170" height="96" rx="14" fill="#0ea5e9" fill-opacity="0.2" stroke="#38bdf8" stroke-width="2"/>
+      <text x="485.0" y="296.0" font-size="27" font-weight="700" fill="#f8fafc" text-anchor="middle">work</text>
+      <text x="485.0" y="329.0" font-size="18" fill="#cbd5e1" text-anchor="middle">초안</text>
+      <line x1="570" y1="302" x2="640" y2="302" stroke="#94a3b8" stroke-width="3" marker-end="url(#a)"/>
+      
+      <rect x="650" y="254" width="170" height="96" rx="14" fill="#fbbf24" fill-opacity="0.2" stroke="#fbbf24" stroke-width="2"/>
+      <text x="735.0" y="296.0" font-size="27" font-weight="700" fill="#f8fafc" text-anchor="middle">critic</text>
+      <text x="735.0" y="329.0" font-size="18" fill="#cbd5e1" text-anchor="middle">PASS / FAIL</text>
+      
+      <rect x="525" y="454" width="170" height="96" rx="14" fill="#ef4444" fill-opacity="0.2" stroke="#f87171" stroke-width="2"/>
+      <text x="610.0" y="496.0" font-size="27" font-weight="700" fill="#f8fafc" text-anchor="middle">fix</text>
+      <text x="610.0" y="529.0" font-size="18" fill="#cbd5e1" text-anchor="middle">피드백 반영</text>
+      <path d="M735 350 L735 502 L705 502" fill="none" stroke="#f87171" stroke-width="3" marker-end="url(#ar)"/>
+      <text x="750" y="434" font-size="16" fill="#f87171">FAIL</text>
+      <path d="M525 502 L485 502 L485 360" fill="none" stroke="#f87171" stroke-width="3" marker-end="url(#ar)"/>
+      <line x1="820" y1="302" x2="960" y2="302" stroke="#34d399" stroke-width="3" marker-end="url(#ag)"/>
+      <text x="890" y="288" font-size="16" fill="#34d399" text-anchor="middle">PASS</text>
+      
+      <rect x="965" y="254" width="150" height="96" rx="14" fill="#10b981" fill-opacity="0.2" stroke="#34d399" stroke-width="2"/>
+      <text x="1040.0" y="296.0" font-size="27" font-weight="700" fill="#f8fafc" text-anchor="middle">다음 단계</text>
+      <text x="1040.0" y="329.0" font-size="18" fill="#cbd5e1" text-anchor="middle">$prev</text>
+      <text x="600" y="594" font-size="17" fill="#94a3b8" text-anchor="middle" font-family="'JetBrains Mono', Consolas, monospace">매 호출 = 새 claude -p 세션 · 단계 output 캐시 · 도메인은 프롬프트 md에만</text>
+    </g></g>
+  <rect x="60" y="150" width="1080" height="470" rx="14" fill="none" stroke="#fbbf24" stroke-opacity="0.4"/>
+  <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
+    <text x="60" y="690"><tspan font-size="50" font-weight="700" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">PASS</tspan><tspan dx="18" font-size="24" fill="#94a3b8">까지 다음 단계로 못 간다 · 자동 검토·수정 루프 구현</tspan></text>
+    <text x="1140" y="688" font-size="20" fill="#94a3b8" text-anchor="end" font-family="'JetBrains Mono', Consolas, monospace">python</text>
+    <text x="60" y="724" font-size="17" fill="#94a3b8">개인 프로젝트 · 2026.03 ~ · AX Team(에이전트 6명 토론 시뮬레이터)의 한계 분석에서 출발</text>
+  </g>
+</svg>
