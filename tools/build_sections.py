@@ -51,8 +51,8 @@ def roles() -> str:
         ("운영자 10명+", " · 누적 기수 41개"),
     ]) + col(624, SKY, "FULL-STACK", [
         ("운영하면서 발견한 문제", "를 직접 시스템으로"),
-        ("Next.js 16 · Supabase · FastAPI", " · pgvector"),
-        ("1인", " 설계 · 구현 · 배포"),
+        ("웹(Next.js) · API(FastAPI) · DB(PostgreSQL)", " · 클라우드 배포"),
+        ("요구분석 · 설계 · 개발 · 운영", " 전 단계 직접 수행"),
     ])
     body += f'''
   <circle cx="600" cy="140" r="22" fill="{INK}" stroke="#ffffff" stroke-opacity="0.2"/>
@@ -63,12 +63,12 @@ def roles() -> str:
 # ── 02 · What I think ───────────────────────────────────────
 def think() -> str:
     items = [
-        ("운영자로서 발견한 문제만 진짜 문제다.", "운영도 코드도 한 사람이 하면 잘못 푸는 일이 줄어든다."),
-        ("도메인 깊이가 없으면", "AI는 가짜 문제만 푼다."),
-        ("평가 없는 PoC는 데모일 뿐.", "backtest 1번이 도입 결정의 무기."),
-        ("가장 비싼 사람은 기획·운영 + 코드 + 도메인 hybrid.", "AI 코딩 시대의 셈법."),
+        ("요구분석 → 설계 → 개발 → 운영", "한 사이클을 직접 수행한다. 운영자가 겪은 문제에서 요구사항이 나온다."),
+        ("코드보다 문서 먼저.", "모든 저장소에 설계 문서와 운영 가이드를 둔다."),
+        ("실데이터로 검증하고, 안 맞으면 설계를 버린다.", "조달핏은 수주이력 매칭 1.1% 확인 후 업종 중심으로 피벗."),
+        ("지금 보강 중:", "테스트 자동화(Playwright), DB 접근 권한(RLS) 정책."),
     ]
-    body = header("02", "What I think", AMBER)
+    body = header("02", "How I work", AMBER)
     for i, (b, rest) in enumerate(items):
         y = 140 + i * 66
         body += f'''

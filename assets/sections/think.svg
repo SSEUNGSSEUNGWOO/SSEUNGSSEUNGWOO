@@ -7,14 +7,14 @@
   <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
   <text x="48" y="58" font-size="16" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">02</text>
-  <text x="112" y="60" font-size="30" font-weight="700" fill="#f8fafc">What I think</text>
+  <text x="112" y="60" font-size="30" font-weight="700" fill="#f8fafc">How I work</text>
   <line x1="48" y1="84" x2="1152" y2="84" stroke="#ffffff" stroke-opacity="0.12"/>
   <text x="48" y="140" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">01</text>
-  <text x="96" y="140" font-size="22"><tspan font-weight="700" fill="#f8fafc">운영자로서 발견한 문제만 진짜 문제다.</tspan><tspan dx="12" fill="#94a3b8">운영도 코드도 한 사람이 하면 잘못 푸는 일이 줄어든다.</tspan></text>
+  <text x="96" y="140" font-size="22"><tspan font-weight="700" fill="#f8fafc">요구분석 → 설계 → 개발 → 운영</tspan><tspan dx="12" fill="#94a3b8">한 사이클을 직접 수행한다. 운영자가 겪은 문제에서 요구사항이 나온다.</tspan></text>
   <text x="48" y="206" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">02</text>
-  <text x="96" y="206" font-size="22"><tspan font-weight="700" fill="#f8fafc">도메인 깊이가 없으면</tspan><tspan dx="12" fill="#94a3b8">AI는 가짜 문제만 푼다.</tspan></text>
+  <text x="96" y="206" font-size="22"><tspan font-weight="700" fill="#f8fafc">코드보다 문서 먼저.</tspan><tspan dx="12" fill="#94a3b8">모든 저장소에 설계 문서와 운영 가이드를 둔다.</tspan></text>
   <text x="48" y="272" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">03</text>
-  <text x="96" y="272" font-size="22"><tspan font-weight="700" fill="#f8fafc">평가 없는 PoC는 데모일 뿐.</tspan><tspan dx="12" fill="#94a3b8">backtest 1번이 도입 결정의 무기.</tspan></text>
+  <text x="96" y="272" font-size="22"><tspan font-weight="700" fill="#f8fafc">실데이터로 검증하고, 안 맞으면 설계를 버린다.</tspan><tspan dx="12" fill="#94a3b8">조달핏은 수주이력 매칭 1.1% 확인 후 업종 중심으로 피벗.</tspan></text>
   <text x="48" y="338" font-size="15" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">04</text>
-  <text x="96" y="338" font-size="22"><tspan font-weight="700" fill="#f8fafc">가장 비싼 사람은 기획·운영 + 코드 + 도메인 hybrid.</tspan><tspan dx="12" fill="#94a3b8">AI 코딩 시대의 셈법.</tspan></text></g>
+  <text x="96" y="338" font-size="22"><tspan font-weight="700" fill="#f8fafc">지금 보강 중:</tspan><tspan dx="12" fill="#94a3b8">테스트 자동화(Playwright), DB 접근 권한(RLS) 정책.</tspan></text></g>
 </svg>
