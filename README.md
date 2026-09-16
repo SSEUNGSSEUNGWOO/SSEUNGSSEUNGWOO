@@ -48,7 +48,7 @@
       <img src="https://img.shields.io/badge/Bun-000?style=flat-square&logo=bun" alt="">
     </td>
     <td width="50%">
-      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="https://raw.githubusercontent.com/SSEUNGSSEUNGWOO/kbrain-cert/main/docs/screenshot.png" width="100%" alt="kbrain-cert 대시보드"></a>
+      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="https://raw.githubusercontent.com/SSEUNGSSEUNGWOO/kbrain-cert/main/docs/screenshot.png?v=2" width="100%" alt="kbrain-cert 대시보드"></a>
       <h3><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert">kbrain-cert</a></h3>
       작업형 문항 전용 온라인 CBT. 실시간 화상 감독 · 감독관 모니터 · 이벤트 로그 · 수동 채점 · 답안 export.<br><br>
       <b>규모</b> 2026-07 인증평가 실사용 · 제출 783명<br>
