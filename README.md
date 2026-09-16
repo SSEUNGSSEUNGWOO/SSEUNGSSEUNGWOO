@@ -28,8 +28,8 @@
 <table width="100%">
   <tr valign="top">
     <td width="50%">
-      <a href="https://jodalfit.co.kr"><img src="assets/cards/jodalfit.svg" width="100%" alt="조달핏 — 회사명 하나로 검토할 만한 나라장터 공고 TOP 5를 추천하는 공개 서비스. 운영 중. 공고 11,000건 이상 수집·색인, 매일 갱신."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/jodalfit">조달핏</a></b> · <a href="https://jodalfit.co.kr">jodalfit.co.kr</a> — 등록업종·공급물품·수주이력 임베딩 매칭. 수주이력 중심 설계는 실데이터 매칭 1.1%로 확인 후 업종 중심으로 조정. 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/jodalfit#2-핵심-알고리즘-2026-05-25-pivot--업종-메인--동적-가중치">README 2장</a>.
+      <a href="https://jodalfit.co.kr"><img src="assets/cards/jodalfit.svg" width="100%" alt="조달핏 — 수주 영업의 공고 탐색을 대신한다. 매일 나라장터를 뒤지는 일을 회사명 입력 한 번으로. 진행 공고 11,000건 이상을 매일 수집해 자격 필터와 임베딩 매칭으로 회사별 TOP 5. 운영 중."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/jodalfit">조달핏</a></b> · <a href="https://jodalfit.co.kr">jodalfit.co.kr</a> — 수주 영업 담당자가 매일 나라장터를 뒤져 "우리가 들어갈 수 있는 공고"를 골라내던 일을 대신한다. 키워드 알림(<a href="https://github.com/SSEUNGSSEUNGWOO/g2b-monitor">g2b-monitor</a>)으로 시작해 등록업종·공급물품·수주이력 임베딩 매칭으로 바꿨고, 자격(면허·지역·마감) 필터가 먼저다. 수주이력 중심 설계는 실데이터 매칭 1.1%로 확인 후 업종 중심으로 조정. 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/jodalfit#2-핵심-알고리즘-2026-05-25-pivot--업종-메인--동적-가중치">README 2장</a>.
     </td>
     <td width="50%">
       <a href="https://daeasy.co.kr"><img src="assets/cards/daeasy.svg" width="100%" alt="DAEASY — 기업·공공기관 교육 문의를 받는 B2B 영업 채널. 과정·사례·인사이트·AI 체험관의 모든 동선이 교육 문의로 모인다. 고객 회원, 역할 기반 어드민, 콘텐츠 자동 발행 2종. 운영 중."></a>
