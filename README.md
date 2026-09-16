@@ -3,6 +3,8 @@
   <img src="assets/banner-light.svg" width="100%" alt="Seungwoo Jang — 기획·운영과 개발을 한 사람이 직접 합니다.">
 </picture>
 
+<br>
+
 <table width="100%">
   <tr>
     <th width="50%" align="left">기획 · 운영</th>
@@ -83,8 +85,11 @@
 
 ## Stack
 
-**Python** · **TypeScript** · Next.js 16 · React 19 · FastAPI · Supabase (Postgres · pgvector · Auth) · Tailwind · Vercel
-Claude API · Claude Code CLI · RAG · GraphRAG · Multi-agent orchestration
+**언어·프레임워크** — Python · TypeScript · Next.js 16 · React 19 · FastAPI · Tailwind
+
+**데이터·배포** — Supabase (Postgres · pgvector · Auth) · Vercel · GitHub Actions
+
+**AI** — Claude API · Claude Code CLI · RAG · GraphRAG · Multi-agent orchestration
 
 <br>
 

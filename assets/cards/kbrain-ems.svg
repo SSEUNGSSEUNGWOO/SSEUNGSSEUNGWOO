@@ -27,8 +27,7 @@
     <rect x="60" y="120" width="1080" height="500" rx="14" fill="none" stroke="#34d399" stroke-opacity="0.35"/>
   </g>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-    <text x="60" y="702" font-size="40" font-weight="700" fill="#34d399" font-family="'JetBrains Mono', Consolas, monospace">8,180</text>
-    <text x="208" y="702" font-size="20" fill="#94a3b8">누적 지원 · 수료 1,449 · 기수 41</text>
+    <text x="60" y="702"><tspan font-size="40" font-weight="700" fill="#34d399" font-family="'JetBrains Mono', Consolas, monospace">8,180</tspan><tspan dx="18" font-size="20" fill="#94a3b8">누적 지원 · 수료 1,449 · 기수 41</tspan></text>
     <text x="1140" y="702" font-size="20" fill="#cbd5e1" text-anchor="end">교육 운영 관리 시스템</text>
   </g>
 </svg>

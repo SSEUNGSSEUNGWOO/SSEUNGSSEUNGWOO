@@ -65,8 +65,7 @@
     <rect x="60" y="120" width="1080" height="500" rx="14" fill="none" stroke="#fbbf24" stroke-opacity="0.35"/>
   </g>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-    <text x="60" y="702" font-size="40" font-weight="700" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">PASS</text>
-    <text x="182" y="702" font-size="20" fill="#94a3b8">까지 다음 단계로 못 간다</text>
+    <text x="60" y="702"><tspan font-size="40" font-weight="700" fill="#fbbf24" font-family="'JetBrains Mono', Consolas, monospace">PASS</tspan><tspan dx="18" font-size="20" fill="#94a3b8">까지 다음 단계로 못 간다</tspan></text>
     <text x="1140" y="702" font-size="20" fill="#cbd5e1" text-anchor="end">Critic PASS까지 도는 오케스트레이터</text>
   </g>
 </svg>

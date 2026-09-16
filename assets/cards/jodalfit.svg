@@ -27,8 +27,7 @@
     <rect x="60" y="120" width="1080" height="500" rx="14" fill="none" stroke="#10b981" stroke-opacity="0.35"/>
   </g>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-    <text x="60" y="702" font-size="40" font-weight="700" fill="#10b981" font-family="'JetBrains Mono', Consolas, monospace">11,000+</text>
-    <text x="260" y="702" font-size="20" fill="#94a3b8">진행 공고 매일 갱신 · 회사 34,517</text>
+    <text x="60" y="702"><tspan font-size="40" font-weight="700" fill="#10b981" font-family="'JetBrains Mono', Consolas, monospace">11,000+</tspan><tspan dx="18" font-size="20" fill="#94a3b8">진행 공고 매일 갱신 · 회사 34,517</tspan></text>
     <text x="1140" y="702" font-size="20" fill="#cbd5e1" text-anchor="end">나라장터 공고 추천</text>
   </g>
 </svg>

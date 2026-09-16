@@ -27,8 +27,7 @@
     <rect x="60" y="120" width="1080" height="500" rx="14" fill="none" stroke="#60a5fa" stroke-opacity="0.35"/>
   </g>
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
-    <text x="60" y="702" font-size="40" font-weight="700" fill="#60a5fa" font-family="'JetBrains Mono', Consolas, monospace">매일</text>
-    <text x="130" y="702" font-size="20" fill="#94a3b8">인사이트 자동 발행 · 판정은 코드가</text>
+    <text x="60" y="702"><tspan font-size="40" font-weight="700" fill="#60a5fa" font-family="'JetBrains Mono', Consolas, monospace">4.0/5</tspan><tspan dx="18" font-size="20" fill="#94a3b8">합격선 · 미만이면 최대 3회 재작성 · 판정은 코드가</tspan></text>
     <text x="1140" y="702" font-size="20" fill="#cbd5e1" text-anchor="end">회사 사이트 + AI 자동 발행</text>
   </g>
 </svg>
