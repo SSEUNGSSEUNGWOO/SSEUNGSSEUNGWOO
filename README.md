@@ -48,10 +48,10 @@
       <img src="https://img.shields.io/badge/Bun-000?style=flat-square&logo=bun" alt="">
     </td>
     <td width="50%">
-      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="https://raw.githubusercontent.com/SSEUNGSSEUNGWOO/kbrain-cert/main/docs/screenshot.png?v=2" width="100%" alt="kbrain-cert 대시보드"></a>
+      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="https://raw.githubusercontent.com/SSEUNGSSEUNGWOO/kbrain-cert/main/docs/screenshot.png?v=3" width="100%" alt="kbrain-cert 대시보드"></a>
       <h3><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert">kbrain-cert</a></h3>
       작업형 문항 전용 온라인 CBT. 실시간 화상 감독 · 감독관 모니터 · 이벤트 로그 · 수동 채점 · 답안 export.<br><br>
-      <b>규모</b> 2026-07 인증평가 실사용 · 제출 783명<br>
+      <b>규모</b> 누적 응시 1,466명 · 최대 동시 108명 (설계 기준 100명을 실운영에서 초과)<br>
       <b>설계</b> 외부 코드로 운영하며 반복된 문제 4개를 설계 단계에서 제거<br><br>
       <img src="https://img.shields.io/badge/Next.js%2016-000?style=flat-square&logo=nextdotjs" alt="">
       <img src="https://img.shields.io/badge/Supabase-3ecf8e?style=flat-square&logo=supabase&logoColor=white" alt="">
