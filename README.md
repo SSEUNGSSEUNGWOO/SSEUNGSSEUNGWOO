@@ -32,8 +32,8 @@
       <b><a href="https://github.com/SSEUNGSSEUNGWOO/jodalfit">조달핏</a></b> · <a href="https://jodalfit.co.kr">jodalfit.co.kr</a> — 등록업종·공급물품·수주이력 임베딩 매칭. 수주이력 중심 설계는 실데이터 매칭 1.1%로 확인 후 업종 중심으로 조정. 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/jodalfit#2-핵심-알고리즘-2026-05-25-pivot--업종-메인--동적-가중치">README 2장</a>.
     </td>
     <td width="50%">
-      <a href="https://daeasy.co.kr"><img src="assets/cards/daeasy.svg" width="100%" alt="DAEASY — 회사 공식 사이트 전체. 공개 사이트, 고객 회원, 역할 기반 어드민, 콘텐츠 자동 발행 2종. 운영 중."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/daeasy">DAEASY</a></b> · <a href="https://daeasy.co.kr">daeasy.co.kr</a> — 교육과정·사례·문의·AI 체험관 공개 사이트, 캡차·이메일 인증을 갖춘 고객 회원, admin/editor 역할 어드민, 인사이트·홍보자료 자동 발행까지 한 저장소. 자동 발행은 작성(claude)과 평가(codex)를 다른 모델에 맡기고 합격 판정은 코드가 한다. <a href="https://github.com/SSEUNGSSEUNGWOO/daeasy#파이프라인에서-결정한-것">README</a>.
+      <a href="https://daeasy.co.kr"><img src="assets/cards/daeasy.svg" width="100%" alt="DAEASY — 기업·공공기관 교육 문의를 받는 B2B 영업 채널. 과정·사례·인사이트·AI 체험관의 모든 동선이 교육 문의로 모인다. 고객 회원, 역할 기반 어드민, 콘텐츠 자동 발행 2종. 운영 중."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/daeasy">DAEASY</a></b> · <a href="https://daeasy.co.kr">daeasy.co.kr</a> — 커리큘럼·일정·견적 문의가 목적인 사이트. 과정 소개·교육 사례·인사이트·AI 체험관(체험 뒤 과정 추천 → 문의)이 전부 문의로 이어지고, 캡차·이메일 인증 고객 회원, admin/editor 어드민, 인사이트·홍보자료 자동 발행까지 한 저장소. 자동 발행은 작성(claude)과 평가(codex)를 다른 모델에 맡기고 합격 판정은 코드가 한다. <a href="https://github.com/SSEUNGSSEUNGWOO/daeasy#파이프라인에서-결정한-것">README</a>.
     </td>
   </tr>
 </table>
