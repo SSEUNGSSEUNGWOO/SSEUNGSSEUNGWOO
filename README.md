@@ -5,7 +5,7 @@
 
 <img src="assets/sections/roles.svg" width="100%" alt="기획·운영 × 개발. 선발·교육·인증평가 운영, 현업 요구사항 정리·업무 절차 설계, 운영 담당자 10명 이상이 사용하는 시스템. 업무 시스템 4개 개발·운영, 웹·API·DB 구현 및 배포, 컴퓨터과학 전공(강원대학교).">
 
-<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 업무 서비스 4(소스 비공개, 사례 문서 공개), 개인 프로젝트 2">
+<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 사례 문서 3(회사 시스템, 소스 비공개), 소스 공개 3">
 
 <table width="100%">
   <tr>

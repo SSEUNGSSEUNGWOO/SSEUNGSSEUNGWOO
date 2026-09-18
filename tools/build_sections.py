@@ -112,7 +112,7 @@ def where() -> str:
 # ── Projects header ─────────────────────────────────────────
 def projects_header() -> str:
     body = header("01", "Projects") + f'''
-  <text x="{W-48}" y="62" font-size="17" fill="{MUTED}" text-anchor="end">업무 서비스 4 (소스 비공개 · 사례 문서) · 개인 프로젝트 2</text>'''
+  <text x="{W-48}" y="62" font-size="17" fill="{MUTED}" text-anchor="end">사례 문서 3 (회사 시스템, 소스 비공개) · 소스 공개 3</text>'''
     return panel(104, body, "Projects")
 
 
