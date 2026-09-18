@@ -31,7 +31,7 @@
     <text x="798" y="414" font-size="17" fill="#94a3b8">누적 응시</text>
     <text x="976" y="384" font-size="46" font-weight="700" fill="#38bdf8" font-family="'JetBrains Mono', Consolas, monospace">1,376</text>
     <text x="976" y="414" font-size="17" fill="#94a3b8">고유 응시자</text>
-    <text x="620" y="458" font-size="15" fill="#94a3b8">실시험 운영 집계 (부하테스트 아님)</text>
-    <text x="620" y="482" font-size="15" fill="#94a3b8">동시 응시 설계 기준은 100명</text>
+    <text x="620" y="458" font-size="15" fill="#94a3b8">실시험 운영 집계 (부하테스트 아님) · 동시 응시 설계 기준은 100명</text>
+    <text x="620" y="482" font-size="15" fill="#94a3b8">소스는 회사 자산이라 비공개, 사례 문서 공개</text>
   </g>
 </svg>

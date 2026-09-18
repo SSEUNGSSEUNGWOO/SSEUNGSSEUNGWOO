@@ -5,13 +5,13 @@
 
 <img src="assets/sections/roles.svg" width="100%" alt="기획·운영 × 개발. 선발·교육·인증평가 운영, 현업 요구사항 정리·업무 절차 설계, 운영 담당자 10명 이상이 사용하는 시스템. 업무 시스템 4개 개발·운영, 웹·API·DB 구현 및 배포, 컴퓨터과학 전공(강원대학교).">
 
-<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 업무 서비스 4, 개인 프로젝트 2 (모두 운영 중)">
+<img src="assets/sections/projects-header.svg" width="100%" alt="01 Projects — 업무 서비스 4(소스 비공개, 사례 문서 공개), 개인 프로젝트 2">
 
 <table width="100%">
   <tr>
     <td>
-      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="kbrain-ems — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems">kbrain-ems</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 설계 결정과 테이블 29개 설명은 저장소 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems/blob/main/CLAUDE.md">CLAUDE.md</a>.
+      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="kbrain-ems — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy">kbrain-ems</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 소스는 회사 자산이라 비공개이고, 설계와 규모는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy">사례 문서</a>.
     </td>
   </tr>
 </table>
@@ -19,8 +19,8 @@
 <table width="100%">
   <tr>
     <td>
-      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="kbrain-cert — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert">kbrain-cert</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert/blob/main/docs/DECISIONS.md">DECISIONS.md</a>.
+      <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="kbrain-cert — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy">kbrain-cert</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy/blob/main/docs/DECISIONS.md">DECISIONS.md</a>.
     </td>
   </tr>
 </table>
@@ -33,7 +33,7 @@
     </td>
     <td width="50%">
       <a href="https://daeasy.co.kr"><img src="assets/cards/daeasy.svg" width="100%" alt="DAEASY — 기업·공공기관 교육 문의를 받는 B2B 영업 채널. 과정·사례·인사이트·AI 체험관의 모든 동선이 교육 문의로 모인다. 고객 회원, 역할 기반 어드민, 콘텐츠 자동 발행 2종. 운영 중."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/daeasy">DAEASY</a></b> · <a href="https://daeasy.co.kr">daeasy.co.kr</a> — 커리큘럼·일정·견적 문의가 목적인 사이트. 과정 소개·교육 사례·인사이트·AI 체험관(체험 뒤 과정 추천 → 문의)이 전부 문의로 이어지고, 캡차·이메일 인증 고객 회원, admin/editor 어드민, 인사이트·홍보자료 자동 발행까지 한 저장소. 자동 발행은 작성(claude)과 평가(codex)를 다른 모델에 맡기고 합격 판정은 코드가 한다. <a href="https://github.com/SSEUNGSSEUNGWOO/daeasy#파이프라인에서-결정한-것">README</a>.
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/daeasy-casestudy">DAEASY</a></b> · <a href="https://daeasy.co.kr">daeasy.co.kr</a> — 커리큘럼·일정·견적 문의가 목적인 사이트. 과정 소개·교육 사례·인사이트·AI 체험관(체험 뒤 과정 추천 → 문의)이 전부 문의로 이어지고, 캡차·이메일 인증 고객 회원, admin/editor 어드민, 인사이트·홍보자료 자동 발행까지 한 저장소. 자동 발행은 작성(claude)과 평가(codex)를 다른 모델에 맡기고 합격 판정은 코드가 한다. <a href="https://github.com/SSEUNGSSEUNGWOO/daeasy-casestudy#파이프라인에서-결정한-것">README</a>.
     </td>
   </tr>
 </table>
