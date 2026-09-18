@@ -11,7 +11,7 @@
   <tr>
     <td>
       <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="kbrain-ems — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy">kbrain-ems</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 소스는 회사 자산이라 비공개이고, 설계와 규모는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy">사례 문서</a>.
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy">kbrain-ems</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 소스는 회사 자산이라 비공개이고, 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-ems-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
     </td>
   </tr>
 </table>
