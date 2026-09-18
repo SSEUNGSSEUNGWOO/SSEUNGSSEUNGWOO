@@ -44,18 +44,18 @@ def roles() -> str:
             out += f'<text x="{x+32}" y="{136+i*42}" font-size="23" fill="{TEXT}"><tspan font-weight="700" fill="#f8fafc">{b}</tspan>{rest}</text>'
         return out
     body = col(48, "PLANNING · OPERATIONS", [
-        ("선발 · 교육 · 인증평가", " 운영"),
         ("현업 요구사항 정리", " · 업무 절차 설계"),
-        ("운영 담당자 10명 이상", "이 사용하는 시스템"),
-    ]) + col(624, "DEVELOPMENT", [
-        ("업무 시스템 4개", " 개발 · 운영"),
-        ("웹 · API · DB", " 구현 및 배포"),
-        ("컴퓨터과학 전공", " (강원대학교)"),
+        ("공공 AI 교육 사업", " 선발 · 교육 · 인증평가 운영"),
+        ("운영 담당자 10명 이상", "이 쓰는 시스템"),
+    ]) + col(624, "AI · SYSTEM ENGINEERING", [
+        ("교육 · 조달 · 영업", " 3개 도메인 시스템"),
+        ("임베딩 매칭 · LLM 파이프라인", " 설계"),
+        ("웹 · API · DB · 배포", " 직접 구현"),
     ])
     body += f'''
   <circle cx="600" cy="148" r="22" fill="{INK}" stroke="#ffffff" stroke-opacity="0.2"/>
   <text x="600" y="157" font-size="24" font-weight="700" fill="#f8fafc" text-anchor="middle">×</text>'''
-    return panel(296, body, "기획·운영 × 개발")
+    return panel(296, body, "기획·운영 × AI·시스템 엔지니어링")
 
 
 # ── How I work ──────────────────────────────────────────────
@@ -78,8 +78,9 @@ def think() -> str:
 # ── Stack ───────────────────────────────────────────────────
 def stack() -> str:
     rows = [
-        ("업무 서비스에서 사용", ["TypeScript", "Next.js", "React", "Python", "FastAPI", "PostgreSQL · Supabase", "pgvector", "Vercel", "Agora"]),
-        ("개인 프로젝트 · 실험", ["Claude API", "Claude Code CLI", "RAG", "Multi-agent"]),
+        ("운영 중 서비스 · AI", ["Python", "TypeScript", "Next.js", "FastAPI", "PostgreSQL · pgvector", "Claude API", "RAG", "임베딩 매칭"]),
+        ("AI · NLP 실험", ["BERT", "t-SNE", "하이브리드 검색", "리랭커", "Multi-agent", "Claude Code CLI"]),
+        ("배포 · 운영", ["Vercel", "GitHub Actions", "Supabase", "Agora", "Bun · uv"]),
     ]
     body = header("03", "Stack")
     y = 150
@@ -112,7 +113,7 @@ def where() -> str:
 # ── Projects header ─────────────────────────────────────────
 def projects_header() -> str:
     body = header("01", "Projects") + f'''
-  <text x="{W-48}" y="62" font-size="17" fill="{MUTED}" text-anchor="end">사례 문서 3 (회사 시스템, 소스 비공개) · 소스 공개 3</text>'''
+  <text x="{W-48}" y="62" font-size="17" fill="{MUTED}" text-anchor="end">교육 · 공공조달 · 영업 · 교육용 6개 시스템</text>'''
     return panel(104, body, "Projects")
 
 

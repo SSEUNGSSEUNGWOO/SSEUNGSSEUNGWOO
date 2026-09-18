@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="296" viewBox="0 0 1200 296" role="img" aria-label="기획·운영 × 개발">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="296" viewBox="0 0 1200 296" role="img" aria-label="기획·운영 × AI·시스템 엔지니어링">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1220"/><stop offset="1" stop-color="#111c33"/></linearGradient>
   </defs>
@@ -6,10 +6,10 @@
   <g font-family="Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', system-ui, sans-serif">
   <rect x="48" y="48" width="528" height="200" rx="18" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.1"/>
   <rect x="48" y="48" width="6" height="200" rx="3" fill="#2dd4bf"/>
-  <text x="80" y="92" font-size="15" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">PLANNING · OPERATIONS</text><text x="80" y="136" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">선발 · 교육 · 인증평가</tspan> 운영</text><text x="80" y="178" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">현업 요구사항 정리</tspan> · 업무 절차 설계</text><text x="80" y="220" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">운영 담당자 10명 이상</tspan>이 사용하는 시스템</text>
+  <text x="80" y="92" font-size="15" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">PLANNING · OPERATIONS</text><text x="80" y="136" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">현업 요구사항 정리</tspan> · 업무 절차 설계</text><text x="80" y="178" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">공공 AI 교육 사업</tspan> 선발 · 교육 · 인증평가 운영</text><text x="80" y="220" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">운영 담당자 10명 이상</tspan>이 쓰는 시스템</text>
   <rect x="624" y="48" width="528" height="200" rx="18" fill="#ffffff" fill-opacity="0.035" stroke="#ffffff" stroke-opacity="0.1"/>
   <rect x="624" y="48" width="6" height="200" rx="3" fill="#2dd4bf"/>
-  <text x="656" y="92" font-size="15" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">DEVELOPMENT</text><text x="656" y="136" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">업무 시스템 4개</tspan> 개발 · 운영</text><text x="656" y="178" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">웹 · API · DB</tspan> 구현 및 배포</text><text x="656" y="220" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">컴퓨터과학 전공</tspan> (강원대학교)</text>
+  <text x="656" y="92" font-size="15" fill="#2dd4bf" font-family="'JetBrains Mono', Consolas, monospace" letter-spacing="3">AI · SYSTEM ENGINEERING</text><text x="656" y="136" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">교육 · 조달 · 영업</tspan> 3개 도메인 시스템</text><text x="656" y="178" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">임베딩 매칭 · LLM 파이프라인</tspan> 설계</text><text x="656" y="220" font-size="23" fill="#e2e8f0"><tspan font-weight="700" fill="#f8fafc">웹 · API · DB · 배포</tspan> 직접 구현</text>
   <circle cx="600" cy="148" r="22" fill="#0b1220" stroke="#ffffff" stroke-opacity="0.2"/>
   <text x="600" y="157" font-size="24" font-weight="700" fill="#f8fafc" text-anchor="middle">×</text></g>
 </svg>
