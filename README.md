@@ -19,8 +19,8 @@
 <table width="100%">
   <tr>
     <td>
-      <a href="https://github.com/SSEUNGSSEUNGWOO/ems-casestudy"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="kbrain-ems — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/ems-casestudy">kbrain-ems</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 서술형 활용계획 채점에 LLM을 쓰되 1차 보조 채점 + 운영자 최종 승인으로 한정했다. 소스는 회사 자산이라 비공개이고, 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/ems-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
+      <a href="https://github.com/SSEUNGSSEUNGWOO/ems-casestudy"><img src="assets/cards/kbrain-ems.svg" width="100%" alt="교육 운영 시스템 — 모집부터 수료·결과보고까지 교육 운영 데이터를 한 시스템에서 관리. 운영 중. 발주처 행안부·NIA AI 챔피언 사업, 2026.04 ~ 현재, 요구분석·설계·개발·운영. 기수 41, 지원 8,180, 수료 1,449 (2026년 도입 후 집계, 이관 없음)."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/ems-casestudy">교육 운영 시스템</a></b> — 엑셀·구글폼으로 운영하던 교육 사업이 기수·운영자 모두 늘면서 한 시스템으로 옮겼다. 서술형 활용계획 채점에 LLM을 쓰되 1차 보조 채점 + 운영자 최종 승인으로 한정했다. 소스는 회사 자산이라 비공개이고, 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/ems-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
     </td>
   </tr>
 </table>
@@ -28,8 +28,8 @@
 <table width="100%">
   <tr>
     <td>
-      <a href="https://github.com/SSEUNGSSEUNGWOO/cbt-casestudy"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="kbrain-cert — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/cbt-casestudy">kbrain-cert</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/cbt-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
+      <a href="https://github.com/SSEUNGSSEUNGWOO/cbt-casestudy"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="인증평가 CBT — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/cbt-casestudy">인증평가 CBT</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/cbt-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
     </td>
   </tr>
 </table>
