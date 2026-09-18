@@ -33,7 +33,7 @@
     </td>
     <td width="50%">
       <a href="https://daeasy.co.kr"><img src="assets/cards/daeasy.svg" width="100%" alt="DAEASY — 기업·공공기관 교육 문의를 받는 B2B 영업 채널. 과정·사례·인사이트·AI 체험관의 모든 동선이 교육 문의로 모인다. 고객 회원, 역할 기반 어드민, 콘텐츠 자동 발행 2종. 운영 중."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/daeasy-casestudy">DAEASY</a></b> · <a href="https://daeasy.co.kr">daeasy.co.kr</a> — 커리큘럼·일정·견적 문의가 목적인 사이트. 과정 소개·교육 사례·인사이트·AI 체험관(체험 뒤 과정 추천 → 문의)이 전부 문의로 이어지고, 캡차·이메일 인증 고객 회원, admin/editor 어드민, 인사이트·홍보자료 자동 발행까지 한 저장소. 자동 발행은 작성(claude)과 평가(codex)를 다른 모델에 맡기고 합격 판정은 코드가 한다. <a href="https://github.com/SSEUNGSSEUNGWOO/daeasy-casestudy#파이프라인에서-결정한-것">README</a>.
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/daeasy-casestudy">DAEASY</a></b> · <a href="https://daeasy.co.kr">daeasy.co.kr</a> — 커리큘럼·일정·견적 문의가 목적인 사이트. 과정 소개·교육 사례·인사이트·AI 체험관(체험 뒤 과정 추천 → 문의)이 전부 문의로 이어지고, 캡차·이메일 인증 고객 회원, admin/editor 어드민, 인사이트·홍보자료 자동 발행까지 한 저장소. 자동 발행은 작성(claude)과 평가(codex)를 다른 모델에 맡기고 합격 판정은 코드가 한다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/daeasy-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
     </td>
   </tr>
 </table>
