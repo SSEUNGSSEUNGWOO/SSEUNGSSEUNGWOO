@@ -20,7 +20,7 @@
   <tr>
     <td>
       <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy"><img src="assets/cards/kbrain-cert.svg" width="100%" alt="kbrain-cert — 문항 관리·시험 진행·실시간 감독·결과 내보내기를 통합한 사내 CBT. 운영 중. AI 챔피언 인증평가, 2026.07 ~ 현재, 요구분석·설계·개발·운영. 최대 동시 응시 108, 누적 응시 1,466 (실시험 운영 집계)."></a>
-      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy">kbrain-cert</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy/blob/main/docs/DECISIONS.md">DECISIONS.md</a>.
+      <b><a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy">kbrain-cert</a></b> — 외부 코드로 운영하던 인증평가에서 반복된 문제(감독 오탐, 정답 노출, 점수 표기, 타이머)를 설계 단계에서 다르게 풀었다. 결정 근거는 <a href="https://github.com/SSEUNGSSEUNGWOO/kbrain-cert-casestudy/blob/main/docs/decisions.md">설계 결정 기록</a>.
     </td>
   </tr>
 </table>
